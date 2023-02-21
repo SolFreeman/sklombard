@@ -530,6 +530,7 @@
 
 		@include media('>=tablet') {
 			padding: 44px 20px 25px 38px;
+			min-height: 280px;
 		}
 
 		&:hover {
@@ -924,6 +925,8 @@ span.select2-selection__clear {
 		border-radius: 4px;
 		overflow: hidden;
 		margin-right: 8px;
+		padding-left: 0;
+		margin-bottom: 0;
 
 		&:before {
 			position: absolute;

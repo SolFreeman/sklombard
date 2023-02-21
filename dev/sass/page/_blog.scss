@@ -115,6 +115,7 @@
 	li {
 		margin-right: 15px;
 		padding: 0;
+		margin-bottom: 0;
 
 		@include media('>=tablet') {
 			margin-right: 25px;

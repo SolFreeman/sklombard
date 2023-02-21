@@ -250,6 +250,7 @@
 		cursor: pointer;
 		list-style-type: none;
 		text-align: center;
+		margin-bottom: 0;
 
 		&:before {
 			display: none;
@@ -308,6 +309,7 @@
 
 	&__item {
 		margin-bottom: 25px;
+		padding-left: 0;
 
 		@include media('>=1320px') {
 			padding: 10px 0 10px 33px;
@@ -338,8 +340,11 @@
 			}
 		}
 
+		&.open,
 		&:hover {
 			a {
+				color: $primary-color;
+
 				&:before {
 					color: $primary-color;
 					transform: rotate(-180deg);
@@ -546,6 +551,7 @@
 
 	li {
 		padding-left: 0;
+		margin-bottom: 0;
 
 		&:before {
 			display: none;
