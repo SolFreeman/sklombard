@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#188de7">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <title>Сборка Markup</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" />
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+    <!--	<link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />-->
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui/jquery-ui.theme.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+
+    <div class='thetop'></div>
+    <div class='scrolltop'>
+        <div class='muve-top'></div>
+    </div>
+    <a href="markup.html" class="markup-link">markup</a>
+
+    <header class="header header_pc">
+        <div class="logo-holder">
+            <a href="index.html" class="logo">
+			<img src="./assets/img/logo.svg" class="img-fluid" alt="logo">
+		</a>
+        </div>
+        <div class="nav-holder">
+            <div class="language-bar">
+                <div class="language-title">UA</div>
+                <ul class="language-list">
+                    <li class="menu-item"><a href="#">EN</a></li>
+                    <li class="menu-item"><a href="#">RU</a></li>
+                    <li class="menu-item active"><a href="#">UA</a></li>
+                </ul>
+            </div>
+            <nav class="nav">
+                <div class="nav-login">
+                    <button class="login-opener js-login-opener">
+                        <div class="user-img">
+                            <img src="./assets/img/user-img.jpeg" alt="image description">
+                        </div>
+                        <i class="icomoon-chevron"></i>
+                    </button>
+                    <ul class="user-info-list js-user-info-list">
+                        <li><a href="#"><i class="icomoon-user"></i>My profile</a></li>
+                        <li><a href="#"><i class="icomoon-photo"></i>My photo/video</a></li>
+                        <li><a href="#"><i class="icomoon-heart-user"></i>My favorite ladies</a></li>
+                        <li><a href="#"><i class="icomoon-users"></i>Public profile</a></li>
+                        <li><a href="#"><i class="icomoon-plan"></i>Service plans</a></li>
+                        <li><a href="#"><i class="icomoon-services"></i>Extra services</a></li>
+                        <li><a href="#"><i class="icomoon-documents"></i>Documents</a></li>
+                        <li><a href="#"><i class="icomoon-cards"></i>Payments</a></li>
+                        <li class="ladies-first-item"><a href="#"><i class="icomoon-ladies"></i>Ladies' gallery</a></li>
+                        <li class="ladies-last-item"><a href="#"><i class="icomoon-gifts"></i>Gifts and flowers</a></li>
+                        <li><a href="#"><i class="icomoon-logout"></i>Log out</a></li>
+                    </ul>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav-link" href="../for-men.html">For men</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav-link" href="#">For ladies</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav-link" href="../about.html">About us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav-link"  href="../services.html">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav-link"  href="../blog.html">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav-link" href="../reviews.html">Reviews</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav-link" href="#">Contacts</a>
+                    </li>
+                </ul>
+                <ul class="header-socials">
+                    <li><a href="#"><i class="icomoon-youtube"></i></a></li>
+                    <li><a href="#"><i class="icomoon-instagram"></i></a></li>
+                    <li><a href="#"><i class="icomoon-facebook"></i></a></li>
+                </ul>
+            </nav>
+            <button class="nav-opener js-nav-opener">
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="wrapper dashboard-page">
+        <section class="dashboard">
+            <div class="container container_xl container_df">
+                <div class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">My personal account </a></li>
+                        <li><span>Ladies' gallery</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="gallery-section">
+            <div class="container container_xl">
+                <h1 class="dashboard-title">Ladies' gallery</h1>
+                <div class="filter-block">
+                    <strong>There are 102 profiles for you</strong>
+                    <button class="filter-opener js-filter-opener">
+                        <i class="icomoon-filter"></i>
+                        Filter
+                        <i class="icomoon-chevron"></i>
+                    </button>
+                </div>
+                <div class="filter js-filter">
+                    <form action="#" class="dashboard__step-form">
+                        <ul class="selects-filter js-select-filters">
+                            <li class="remove-all js-remove-all"><i class="icomoon-garbage"></i><span>Сlean filter</span></li>
+                        </ul>
+                        <div class="input-holder">
+                            <label class="input-label" for="ladies-id">ID</label>
+                            <input id="ladies-id" type="text">
+                        </div>
+                        <div class="input-holder input-holder_age">
+                            <label class="input-label" for="ladies-age">Age</label>
+                            <input id="ladies-age" min="16" type="number" placeholder="From">
+                            <input type="number" placeholder="To">
+                        </div>
+                        <div class="input-holder">
+                            <strong class="input-label js-filter-title">Weight</strong>
+                            <div class="filter-select filter-select-opener">Choose Weight <i class="icomoon-chevron"></i></div>
+                            <div class="ul-block">
+                                <ul class="custom-ul scroll">
+                                    <li>
+                                        <input id="lbs90" type="checkbox" name="weight">
+                                        <label class="js-select-filter" for="lbs90">90 lbs(41 kg)</label>
+                                    </li>
+                                    <li>
+                                        <input id="lbs229" type="checkbox" name="weight">
+                                        <label class="js-select-filter" for="lbs229">229 lbs(104 kg)</label>
+                                    </li>
+                                    <li>
+                                        <input id="lbs90-1" type="checkbox" name="weight">
+                                        <label class="js-select-filter" for="lbs90-1">90 lbs(41 kg)</label>
+                                    </li>
+                                    <li>
+                                        <input id="lbs229-1" type="checkbox" name="weight">
+                                        <label class="js-select-filter" for="lbs229-1">229 lbs(104 kg)</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input-holder">
+                            <strong class="input-label js-filter-title">Height</strong>
+                            <div class="filter-select filter-select-opener">Choose Weight <i class="icomoon-chevron"></i></div>
+                            <div class="ul-block">
+                                <ul class="custom-ul scroll">
+                                    <li>
+                                        <input id="140cm" type="checkbox" name="height">
+                                        <label class="js-select-filter" for="140cm">4'7" (140cm) or lower</label>
+                                    </li>
+                                    <li>
+                                        <input id="141cm" type="checkbox" name="height">
+                                        <label class="js-select-filter" for="141cm">4'8" - 4'9" (141-145cm)</label>
+                                    </li>
+                                    <li>
+                                        <input id="150cm" type="checkbox" name="height">
+                                        <label class="js-select-filter" for="150cm">4'10" - 4'11" (146-150cm)</label>
+                                    </li>
+                                    <li>
+                                        <input id="155cm" type="checkbox" name="height">
+                                        <label class="js-select-filter" for="155cm">5'0" - 5'1" (151-155cm)</label>
+                                    </li>
+                                    <li>
+                                        <input id="160cm" type="checkbox" name="height">
+                                        <label class="js-select-filter" for="160cm">5'2" - 5'3" (156-160cm)</label>
+                                    </li>
+                                    <li>
+                                        <input id="165cm" type="checkbox" name="height">
+                                        <label class="js-select-filter" for="165cm">5'4" - 5'5" (161-165cm)</label>
+                                    </li>
+                                    <li>
+                                        <input id="170cm" type="checkbox" name="height">
+                                        <label class="js-select-filter" for="170cm">5'6" - 5'7" (166-170cm)</label>
+                                    </li>
+                                    <li>
+                                        <input id="175cm" type="checkbox" name="height">
+                                        <label class="js-select-filter" for="175cm">5'8" - 5'9" (171-175cm)</label>
+                                    </li>
+                                    <li>
+                                        <input id="180cm" type="checkbox" name="height">
+                                        <label class="js-select-filter" for="180cm">5'10" - 5'11" (176-180cm)</label>
+                                    </li>
+                                    <li>
+                                        <input id="185cm" type="checkbox" name="height">
+                                        <label class="js-select-filter" for="185cm">6'0" - 6'1" (181-185cm)</label>
+                                    </li>
+                                    <li>
+                                        <input id="190cm" type="checkbox" name="height">
+                                        <label class="js-select-filter" for="190cm">6'2" - 6'3" (186-190cm)</label>
+                                    </li>
+                                    <li>
+                                        <input id="191cm" type="checkbox" name="height">
+                                        <label class="js-select-filter" for="191cm">6'4" (191cm) or higher</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input-holder">
+                            <strong class="input-label">Eyes color</strong>
+                            <div class="filter-select filter-select-opener">Choose color <i class="icomoon-chevron"></i></div>
+                            <div class="ul-block">
+                                <ul class="custom-ul scroll">
+                                    <li>
+                                        <input id="eyes-color-doesn-matter" type="checkbox" name="eyes-color">
+                                        <label class="js-select-filter" for="eyes-color-doesn-matter">Doesn’t matter</label>
+                                    </li>
+                                    <li>
+                                        <input id="eyes-color-brow" type="checkbox" name="eyes-color">
+                                        <label class="js-select-filter" for="eyes-color-brow">Вrown</label>
+                                    </li>
+                                    <li>
+                                        <input id="eyes-color-dark-brown" type="checkbox" name="eyes-color">
+                                        <label class="js-select-filter" for="eyes-color-dark-brown">Dark brown</label>
+                                    </li>
+                                    <li>
+                                        <input id="eyes-color-green" type="checkbox" name="eyes-color">
+                                        <label class="js-select-filter" for="eyes-color-green">Green</label>
+                                    </li>
+                                    <li>
+                                        <input id="eyes-color-green-gray" type="checkbox" name="eyes-color">
+                                        <label class="js-select-filter" for="eyes-color-green-gray">Green-grey</label>
+                                    </li>
+                                    <li>
+                                        <input id="eyes-color-grey" type="checkbox" name="eyes-color">
+                                        <label class="js-select-filter" for="eyes-color-grey">Grey</label>
+                                    </li>
+                                    <li>
+                                        <input id="eyes-color-hazel" type="checkbox" name="eyes-color">
+                                        <label class="js-select-filter" for="eyes-color-hazel">Hazel</label>
+                                    </li>
+                                    <li>
+                                        <input id="eyes-color-blue" type="checkbox" name="eyes-color">
+                                        <label class="js-select-filter" for="eyes-color-blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input id="eyes-color-black" type="checkbox" name="eyes-color">
+                                        <label class="js-select-filter" for="eyes-color-black">Black</label>
+                                    </li>
+                                    <li>
+                                        <input id="eyes-color-amber" type="checkbox" name="eyes-color">
+                                        <label class="js-select-filter" for="eyes-color-amber">Amber</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input-holder">
+                            <strong class="input-label">Hair color</strong>
+                            <div class="filter-select filter-select-opener">Choose color <i class="icomoon-chevron"></i></div>
+                            <div class="ul-block">
+                                <ul class="custom-ul scroll">
+                                    <li>
+                                        <input id="hair-color-doesn-matter" type="checkbox" name="hair-color">
+                                        <label class="js-select-filter" for="hair-color-doesn-matter">Doesn’t matter</label>
+                                    </li>
+                                    <li>
+                                        <input id="hair-color-blonde" type="checkbox" name="hair-color">
+                                        <label class="js-select-filter" for="hair-color-blonde">Blonde</label>
+                                    </li>
+                                    <li>
+                                        <input id="hair-color-brunette" type="checkbox" name="hair-color">
+                                        <label class="js-select-filter" for="hair-color-brunette">Brunette</label>
+                                    </li>
+                                    <li>
+                                        <input id="hair-color-fair-haired" type="checkbox" name="hair-color">
+                                        <label class="js-select-filter" for="hair-color-fair-haired">Fair-haired</label>
+                                    </li>
+                                    <li>
+                                        <input id="hair-color-red-haired" type="checkbox" name="hair-color">
+                                        <label class="js-select-filter" for="hair-color-red-haired">Red-haired</label>
+                                    </li>
+                                    <li>
+                                        <input id="hair-color-brown" type="checkbox" name="hair-color">
+                                        <label class="js-select-filter" for="hair-color-brown">Brown</label>
+                                    </li>
+                                    <li>
+                                        <input id="hair-color-chestnut" type="checkbox" name="hair-color">
+                                        <label class="js-select-filter" for="hair-color-chestnut">Chestnut</label>
+                                    </li>
+                                    <li>
+                                        <input id="hair-color-light-brown" type="checkbox" name="hair-color">
+                                        <label class="js-select-filter" for="hair-color-light-brown">Light-brown</label>
+                                    </li>
+                                    <li>
+                                        <input id="hair-color-auburn" type="checkbox" name="hair-color">
+                                        <label class="js-select-filter" for="hair-color-auburn">Auburn</label>
+                                    </li>
+                                    <li>
+                                        <input id="hair-color-black" type="checkbox" name="hair-color">
+                                        <label class="js-select-filter" for="hair-color-black">Black</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input-holder">
+                            <strong class="input-label">Body type</strong>
+                            <div class="filter-select filter-select-opener">Choose an answer <i class="icomoon-chevron"></i></div>
+                            <div class="ul-block">
+                                <ul class="custom-ul scroll">
+                                    <li>
+                                        <input id="body-type-slim" type="checkbox" name="body-type">
+                                        <label class="js-select-filter" for="body-type-slim">Slim</label>
+                                    </li>
+                                    <li>
+                                        <input id="body-type-athletic" type="checkbox" name="body-type">
+                                        <label class="js-select-filter" for="body-type-athletic">Athletic</label>
+                                    </li>
+                                    <li>
+                                        <input id="body-type-fit" type="checkbox" name="body-type">
+                                        <label class="js-select-filter" for="body-type-fit">Fit</label>
+                                    </li>
+                                    <li>
+                                        <input id="body-type-muscular" type="checkbox" name="body-type">
+                                        <label class="js-select-filter" for="body-type-muscular">Muscular</label>
+                                    </li>
+                                    <li>
+                                        <input id="body-type-curvy" type="checkbox" name="body-type">
+                                        <label class="js-select-filter" for="body-type-curvy">Curvy</label>
+                                    </li>
+                                    <li>
+                                        <input id="body-type-bit-heavy" type="checkbox" name="body-type">
+                                        <label class="js-select-filter" for="body-type-bit-heavy">Bit heavy</label>
+                                    </li>
+                                    <li>
+                                        <input id="body-type-overweight" type="checkbox" name="body-type">
+                                        <label class="js-select-filter" for="body-type-overweight">Overweight</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input-holder">
+                            <strong class="input-label">Presence of tattoo/piercing</strong>
+                            <div class="filter-select filter-select-opener">Choose an answer <i class="icomoon-chevron"></i></div>
+                            <div class="ul-block">
+                                <ul class="custom-ul scroll">
+                                    <li>
+                                        <input id="tattoo-piercing-doesn-matter" type="checkbox" name="tattoo-piercing">
+                                        <label class="js-select-filter" for="tattoo-piercing-doesn-matter">Doesn’t matter</label>
+                                    </li>
+                                    <li>
+                                        <input id="tattoo-piercing-yes" type="checkbox" name="tattoo-piercing">
+                                        <label class="js-select-filter" for="tattoo-piercing-yes">Yes</label>
+                                    </li>
+                                    <li>
+                                        <input id="tattoo-piercing-no" type="checkbox" name="tattoo-piercing">
+                                        <label class="js-select-filter" for="tattoo-piercing-no">No</label>
+                                    </li>
+                                    <li>
+                                        <input id="tattoo-piercing-small" type="checkbox" name="tattoo-piercing">
+                                        <label class="js-select-filter" for="tattoo-piercing-small">Small one is ok</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input-holder">
+                            <strong class="input-label">Zodiac sign</strong>
+                            <div class="filter-select filter-select-opener">Choose sign <i class="icomoon-chevron"></i></div>
+                            <div class="ul-block">
+                                <ul class="custom-ul scroll">
+                                    <li>
+                                        <input id="zodiac-sign-doesn-matter" type="checkbox" name="zodiac-sign">
+                                        <label for="zodiac-sign-doesn-matter" class="js-select-filter">Doesn’t matter</label>
+                                    </li>
+                                    <li>
+                                        <input id="zodiac-sign-aries" type="checkbox" name="zodiac-sign">
+                                        <label for="zodiac-sign-aries" class="js-select-filter">Aries</label>
+                                    </li>
+                                    <li>
+                                        <input id="zodiac-sign-taurus" type="checkbox" name="zodiac-sign">
+                                        <label for="zodiac-sign-taurus" class="js-select-filter">Taurus</label>
+                                    </li>
+                                    <li>
+                                        <input id="zodiac-sign-gemini" type="checkbox" name="zodiac-sign">
+                                        <label for="zodiac-sign-gemini" class="js-select-filter">Gemini</label>
+                                    </li>
+                                    <li>
+                                        <input id="zodiac-sign-cancer" type="checkbox" name="zodiac-sign">
+                                        <label for="zodiac-sign-cancer" class="js-select-filter">Cancer</label>
+                                    </li>
+                                    <li>
+                                        <input id="zodiac-sign-leo" type="checkbox" name="zodiac-sign">
+                                        <label for="zodiac-sign-leo" class="js-select-filter">Leo</label>
+                                    </li>
+                                    <li>
+                                        <input id="zodiac-sign-virgo" type="checkbox" name="zodiac-sign">
+                                        <label for="zodiac-sign-virgo" class="js-select-filter">Virgo</label>
+                                    </li>
+                                    <li>
+                                        <input id="zodiac-sign-libra" type="checkbox" name="zodiac-sign">
+                                        <label for="zodiac-sign-libra" class="js-select-filter">Libra</label>
+                                    </li>
+                                    <li>
+                                        <input id="zodiac-sign-scorpio" type="checkbox" name="zodiac-sign">
+                                        <label for="zodiac-sign-scorpio" class="js-select-filter">Scorpio</label>
+                                    </li>
+                                    <li>
+                                        <input id="zodiac-sign-sagittarius" type="checkbox" name="zodiac-sign">
+                                        <label for="zodiac-sign-sagittarius" class="js-select-filter">Sagittarius</label>
+                                    </li>
+                                    <li>
+                                        <input id="zodiac-sign-capricorn" type="checkbox" name="zodiac-sign">
+                                        <label for="zodiac-sign-capricorn" class="js-select-filter">Capricorn</label>
+                                    </li>
+                                    <li>
+                                        <input id="zodiac-sign-aquarius" type="checkbox" name="zodiac-sign">
+                                        <label for="zodiac-sign-aquarius" class="js-select-filter">Aquarius</label>
+                                    </li>
+                                    <li>
+                                        <input id="zodiac-sign-pisces" type="checkbox" name="zodiac-sign">
+                                        <label for="zodiac-sign-pisces" class="js-select-filter">Pisces</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input-holder">
+                            <strong class="input-label">Religion</strong>
+                            <div class="filter-select filter-select-opener">Choose an answer <i class="icomoon-chevron"></i></div>
+                            <div class="ul-block">
+                                <ul class="custom-ul scroll">
+                                    <li>
+                                        <input id="religion-hinduism" type="checkbox" name="religion">
+                                        <label for="religion-hinduism" class="js-select-filter">Hinduism</label>
+                                    </li>
+                                    <li>
+                                        <input id="religion-buddhism" type="checkbox" name="religion">
+                                        <label for="religion-buddhism" class="js-select-filter">Buddhism</label>
+                                    </li>
+                                    <li>
+                                        <input id="religion-islam" type="checkbox" name="religion">
+                                        <label for="religion-islam" class="js-select-filter">Islam</label>
+                                    </li>
+                                    <li>
+                                        <input id="religion-confucianism" type="checkbox" name="religion">
+                                        <label for="religion-confucianism" class="js-select-filter">Confucianism</label>
+                                    </li>
+                                    <li>
+                                        <input id="religion-orthodox" type="checkbox" name="religion">
+                                        <label for="religion-orthodox" class="js-select-filter">Orthodox</label>
+                                    </li>
+                                    <li>
+                                        <input id="religion-judaism" type="checkbox" name="religion">
+                                        <label for="religion-judaism" class="js-select-filter">Judaism</label>
+                                    </li>
+                                    <li>
+                                        <input id="religion-taoism" type="checkbox" name="religion">
+                                        <label for="religion-taoism" class="js-select-filter">Taoism</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input-holder">
+                            <strong class="input-label">Desire to have children</strong>
+                            <div class="filter-select filter-select-opener">Choose an answer <i class="icomoon-chevron"></i></div>
+                            <div class="ul-block">
+                                <ul class="custom-ul scroll">
+                                    <li>
+                                        <input id="have-children-yes" type="checkbox" name="have-children">
+                                        <label for="have-children-yes" class="js-select-filter">Yes</label>
+                                    </li>
+                                    <li>
+                                        <input id="have-children-no" type="checkbox" name="have-children">
+                                        <label for="have-children-no" class="js-select-filter">No</label>
+                                    </li>
+                                    <li>
+                                        <input id="have-children-discussed" type="checkbox" name="have-children">
+                                        <label for="have-children-discussed" class="js-select-filter">Can be discussed</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input-holder">
+                            <strong class="input-label">Children</strong>
+                            <div class="filter-select filter-select-opener">Choose an answer <i class="icomoon-chevron"></i></div>
+                            <div class="ul-block">
+                                <ul class="custom-ul scroll">
+                                    <li>
+                                        <input id="children-0" type="checkbox" name="children">
+                                        <label for="children-0" class="js-select-filter">0</label>
+                                    </li>
+                                    <li>
+                                        <input id="children-1" type="checkbox" name="children">
+                                        <label for="children-1" class="js-select-filter">1</label>
+                                    </li>
+                                    <li>
+                                        <input id="children-2" type="checkbox" name="children">
+                                        <label for="children-2" class="js-select-filter">2</label>
+                                    </li>
+                                    <li>
+                                        <input id="children-3" type="checkbox" name="children">
+                                        <label for="children-3" class="js-select-filter">3</label>
+                                    </li>
+                                    <li>
+                                        <input id="children-4" type="checkbox" name="children">
+                                        <label for="children-4" class="js-select-filter">4 or more</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input-holder">
+                            <strong class="input-label">Marital status</strong>
+                            <div class="filter-select filter-select-opener">Choose status <i class="icomoon-chevron"></i></div>
+                            <div class="ul-block">
+                                <ul class="custom-ul scroll">
+                                    <li>
+                                        <input id="marital-status-doesn-matter" type="checkbox" name="marital-status">
+                                        <label for="marital-status-doesn-matter" class="js-select-filter">Doesn’t matter</label>
+                                    </li>
+                                    <li>
+                                        <input id="marital-status-never" type="checkbox" name="marital-status">
+                                        <label for="marital-status-never" class="js-select-filter">Never married</label>
+                                    </li>
+                                    <li>
+                                        <input id="marital-status-divorced" type="checkbox" name="marital-status">
+                                        <label for="marital-status-divorced" class="js-select-filter">Divorced</label>
+                                    </li>
+                                    <li>
+                                        <input id="marital-status-widowed" type="checkbox" name="marital-status">
+                                        <label for="marital-status-widowed" class="js-select-filter">Widowed</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input-holder">
+                            <strong class="input-label">Smoking</strong>
+                            <div class="filter-select filter-select-opener">Choose an answer <i class="icomoon-chevron"></i></div>
+                            <div class="ul-block">
+                                <ul class="custom-ul scroll">
+                                    <li>
+                                        <input id="smoking-doesn-matter" type="checkbox" name="smoking">
+                                        <label for="smoking-doesn-matter" class="js-select-filter">Doesn’t matter</label>
+                                    </li>
+                                    <li>
+                                        <input id="smoking-yes" type="checkbox" name="smoking">
+                                        <label for="smoking-yes" class="js-select-filter">Yes</label>
+                                    </li>
+                                    <li>
+                                        <input id="smoking-no" type="checkbox" name="smoking">
+                                        <label for="smoking-no" class="js-select-filter">No</label>
+                                    </li>
+                                    <li>
+                                        <input id="smoking-occasionally" type="checkbox" name="smoking">
+                                        <label for="smoking-occasionally" class="js-select-filter">Occasionally</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input-holder">
+                            <strong class="input-label">Drinking</strong>
+                            <div class="filter-select filter-select-opener">Choose an answer <i class="icomoon-chevron"></i></div>
+                            <div class="ul-block">
+                                <ul class="custom-ul scroll">
+                                    <li>
+                                        <input id="drinking-doesn-matter" type="checkbox" name="drinking">
+                                        <label for="drinking-doesn-matter" class="js-select-filter">Doesn’t matter</label>
+                                    </li>
+                                    <li>
+                                        <input id="drinking-yes" type="checkbox" name="drinking">
+                                        <label for="drinking-yes" class="js-select-filter">Yes</label>
+                                    </li>
+                                    <li>
+                                        <input id="drinking-no" type="checkbox" name="drinking">
+                                        <label for="drinking-no" class="js-select-filter">No</label>
+                                    </li>
+                                    <li>
+                                        <input id="drinking-occasionally" type="checkbox" name="drinking">
+                                        <label for="drinking-occasionally" class="js-select-filter">Occasionally</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input-holder">
+                            <strong class="input-label">Country</strong>
+                            <div class="filter-select filter-select-opener">Choose country <i class="icomoon-chevron"></i></div>
+                            <div class="ul-block">
+                                <ul class="custom-ul scroll">
+                                    <li>
+                                        <input id="country-doesn-matter" type="checkbox" name="country">
+                                        <label for="country-doesn-matter" class="js-select-filter">Doesn’t matter</label>
+                                    </li>
+                                    <li>
+                                        <input id="country-germany" type="checkbox" name="country">
+                                        <label for="country-germany" class="js-select-filter">Germany</label>
+                                    </li>
+                                    <li>
+                                        <input id="country-usa" type="checkbox" name="country">
+                                        <label for="country-usa" class="js-select-filter">USA</label>
+                                    </li>
+                                    <li>
+                                        <input id="country-uk" type="checkbox" name="country">
+                                        <label for="country-uk" class="js-select-filter">United Kingdom</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input-holder">
+                            <strong class="input-label">City</strong>
+                            <div class="filter-select filter-select-opener">Choose city <i class="icomoon-chevron"></i></div>
+                            <div class="ul-block">
+                                <ul class="custom-ul scroll">
+                                    <li>
+                                        <input id="city-doesn-matter" type="checkbox" name="city">
+                                        <label for="city-doesn-matter" class="js-select-filter">Doesn’t matter</label>
+                                    </li>
+                                    <li>
+                                        <input id="city-rome" type="checkbox" name="city">
+                                        <label for="city-rome" class="js-select-filter">Rome</label>
+                                    </li>
+                                    <li>
+                                        <input id="city-la" type="checkbox" name="city">
+                                        <label for="city-la" class="js-select-filter">LA</label>
+                                    </li>
+                                    <li>
+                                        <input id="city-london" type="checkbox" name="city">
+                                        <label for="city-london" class="js-select-filter">London</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input-holder">
+                            <strong class="input-label">Languages spoken</strong>
+                            <div class="filter-select filter-select-opener">Choose languages <i class="icomoon-chevron"></i></div>
+                            <div class="ul-block">
+                                <ul class="custom-ul scroll">
+                                    <li>
+                                        <input id="languages-doesn-matter" type="checkbox" name="languages">
+                                        <label for="languages-doesn-matter" class="js-select-filter">Doesn’t matter</label>
+                                    </li>
+                                    <li>
+                                        <input id="languages-english" type="checkbox" name="languages">
+                                        <label for="languages-english" class="js-select-filter">English</label>
+                                    </li>
+                                    <li>
+                                        <input id="languages-spanish" type="checkbox" name="languages">
+                                        <label for="languages-spanish" class="js-select-filter">Spanish</label>
+                                    </li>
+                                    <li>
+                                        <input id="languages-italian" type="checkbox" name="languages">
+                                        <label for="languages-italian" class="js-select-filter">Italian</label>
+                                    </li>
+                                    <li>
+                                        <input id="languages-french" type="checkbox" name="languages">
+                                        <label for="languages-french" class="js-select-filter">French</label>
+                                    </li>
+                                    <li>
+                                        <input id="languages-chinese" type="checkbox" name="languages">
+                                        <label for="languages-chinese" class="js-select-filter">Chinese</label>
+                                    </li>
+                                    <li>
+                                        <input id="languages-ukrainian" type="checkbox" name="languages">
+                                        <label for="languages-ukrainian" class="js-select-filter">Ukrainian</label>
+                                    </li>
+                                    <li>
+                                        <input id="languages-russian" type="checkbox" name="languages">
+                                        <label for="languages-russian" class="js-select-filter">Russian</label>
+                                    </li>
+                                    <li>
+                                        <input id="languages-hebrew" type="checkbox" name="languages">
+                                        <label for="languages-hebrew" class="js-select-filter">Hebrew</label>
+                                    </li>
+                                    <li>
+                                        <input id="languages-other" type="checkbox" name="languages">
+                                        <label for="languages-other" class="js-select-filter">Other</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input-holder">
+                            <strong class="input-label">CERF level</strong>
+                            <div class="filter-select filter-select-opener">Choose level <i class="icomoon-chevron"></i></div>
+                            <div class="ul-block">
+                                <ul class="custom-ul scroll">
+                                    <li>
+                                        <input id="cerf-level-absolute-beginner" type="checkbox" name="cerf-level">
+                                        <label for="cerf-level-absolute-beginner" class="js-select-filter">Absolute Beginner</label>
+                                    </li>
+                                    <li>
+                                        <input id="cerf-level-false-beginner" type="checkbox" name="cerf-level">
+                                        <label for="cerf-level-false-beginner" class="js-select-filter">False Beginner</label>
+                                    </li>
+                                    <li>
+                                        <input id="cerf-level-А1-elementary" type="checkbox" name="cerf-level">
+                                        <label for="cerf-level-А1-elementary" class="js-select-filter">А1 Elementary</label>
+                                    </li>
+                                    <li>
+                                        <input id="cerf-level-А2-pre-intermediate" type="checkbox" name="cerf-level">
+                                        <label for="cerf-level-А2-pre-intermediate" class="js-select-filter">А2 Pre-intermediate</label>
+                                    </li>
+                                    <li>
+                                        <input id="cerf-level-В1-intermediate" type="checkbox" name="cerf-level">
+                                        <label for="cerf-level-В1-intermediate" class="js-select-filter">В1 Intermediate</label>
+                                    </li>
+                                    <li>
+                                        <input id="cerf-level-B2-pre-upper-intermediate" type="checkbox" name="cerf-level">
+                                        <label for="cerf-level-B2-pre-upper-intermediate" class="js-select-filter">B2 Pre-Upper-Intermediate</label>
+                                    </li>
+                                    <li>
+                                        <input id="cerf-level-B2-upper-intermediate" type="checkbox" name="cerf-level">
+                                        <label for="cerf-level-B2-upper-intermediate" class="js-select-filter">B2 Upper-Intermediate</label>
+                                    </li>
+                                    <li>
+                                        <input id="cerf-level-С1-pre-advanced" type="checkbox" name="cerf-level">
+                                        <label for="cerf-level-С1-pre-advanced" class="js-select-filter">С1 Pre-Advanced</label>
+                                    </li>
+                                    <li>
+                                        <input id="cerf-level-С1-advanced" type="checkbox" name="cerf-level">
+                                        <label for="cerf-level-С1-advanced" class="js-select-filter">С1 Advanced</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input-holder">
+                            <strong class="input-label">Race/Ethnicity</strong>
+                            <div class="filter-select filter-select-opener">Choose an answer <i class="icomoon-chevron"></i></div>
+                            <div class="ul-block">
+                                <ul class="custom-ul scroll">
+                                    <li>
+                                        <input id="race-ethnicity-caucasian" type="checkbox" name="race-ethnicity">
+                                        <label for="race-ethnicity-caucasian" class="js-select-filter">Caucasian</label>
+                                    </li>
+                                    <li>
+                                        <input id="race-ethnicity-hispanic" type="checkbox" name="race-ethnicity">
+                                        <label for="race-ethnicity-hispanic" class="js-select-filter">Hispanic</label>
+                                    </li>
+                                    <li>
+                                        <input id="race-ethnicity-latin-american" type="checkbox" name="race-ethnicity">
+                                        <label for="race-ethnicity-latin-american" class="js-select-filter">Latin American</label>
+                                    </li>
+                                    <li>
+                                        <input id="race-ethnicity-nordic" type="checkbox" name="race-ethnicity">
+                                        <label for="race-ethnicity-nordic" class="js-select-filter">Nordic</label>
+                                    </li>
+                                    <li>
+                                        <input id="race-ethnicity-east-indian" type="checkbox" name="race-ethnicity">
+                                        <label for="race-ethnicity-east-indian" class="js-select-filter">East Indian</label>
+                                    </li>
+                                    <li>
+                                        <input id="race-ethnicity-korean" type="checkbox" name="race-ethnicity">
+                                        <label for="race-ethnicity-korean" class="js-select-filter">Korean</label>
+                                    </li>
+                                    <li>
+                                        <input id="race-ethnicity-afro-american" type="checkbox" name="race-ethnicity">
+                                        <label for="race-ethnicity-afro-american" class="js-select-filter">Afro American</label>
+                                    </li>
+                                    <li>
+                                        <input id="race-ethnicity-semitic" type="checkbox" name="race-ethnicity">
+                                        <label for="race-ethnicity-semitic" class="js-select-filter">Semitic</label>
+                                    </li>
+                                    <li>
+                                        <input id="race-ethnicity-arab" type="checkbox" name="race-ethnicity">
+                                        <label for="race-ethnicity-arab" class="js-select-filter">Arab</label>
+                                    </li>
+                                    <li>
+                                        <input id="race-ethnicity-mediterranean" type="checkbox" name="race-ethnicity">
+                                        <label for="race-ethnicity-mediterranean" class="js-select-filter">Mediterranean</label>
+                                    </li>
+                                    <li>
+                                        <input id="race-ethnicity-middle-eastern" type="checkbox" name="race-ethnicity">
+                                        <label for="race-ethnicity-middle-eastern" class="js-select-filter">Middle Eastern</label>
+                                    </li>
+                                    <li>
+                                        <input id="race-ethnicity-asian" type="checkbox" name="race-ethnicity">
+                                        <label for="race-ethnicity-asian" class="js-select-filter">Asian</label>
+                                    </li>
+                                    <li>
+                                        <input id="race-ethnicity-japanese" type="checkbox" name="race-ethnicity">
+                                        <label for="race-ethnicity-japanese" class="js-select-filter">Japanese</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input-holder">
+                            <strong class="input-label">Education</strong>
+                            <div class="filter-select filter-select-opener">Choose an answer <i class="icomoon-chevron"></i></div>
+                            <div class="ul-block">
+                                <ul class="custom-ul scroll">
+                                    <li>
+                                        <input id="education-incomplete-secondary" type="checkbox" name="education">
+                                        <label for="education-incomplete-secondary" class="js-select-filter">Incomplete secondary</label>
+                                    </li>
+                                    <li>
+                                        <input id="education-complete-secondary" type="checkbox" name="education">
+                                        <label for="education-complete-secondary" class="js-select-filter">Complete secondary</label>
+                                    </li>
+                                    <li>
+                                        <input id="education-university-student" type="checkbox" name="education">
+                                        <label for="education-university-student" class="js-select-filter">University student</label>
+                                    </li>
+                                    <li>
+                                        <input id="education-higher" type="checkbox" name="education">
+                                        <label for="education-higher" class="js-select-filter">Higher</label>
+                                    </li>
+                                    <li>
+                                        <input id="education-several-higher" type="checkbox" name="education">
+                                        <label for="education-several-higher" class="js-select-filter">Several higher</label>
+                                    </li>
+                                    <li>
+                                        <input id="education-academic-degree" type="checkbox" name="education">
+                                        <label for="education-academic-degree" class="js-select-filter">Academic degree</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="btn-submit-holder">
+                            <button class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="gallery-section__holder gallery-section__holder_filter">
+                    <div class="favorites-row">
+                        <div class="ladies-block">
+                            <div class="ladies-block__media">
+                                <div class="img-holder">
+                                    <img src="./assets/img/ladies-img-2.jpeg" alt="image description">
+                                </div>
+                                <a href="#" class="btn">Profile page</a>
+                                <a href="#" class="video-link"><i class="icomoon-camera"></i>Add for intro video date</a>
+                            </div>
+                            <div class="ladies-block__info">
+                                <span class="ladies-block__id">ID 4567820</span>
+                                <strong class="ladies-block__name">Anastasia</strong>
+                                <ul class="ladies-block__info-list">
+                                    <li>
+                                        <span>Age:</span>
+                                        <strong>33</strong>
+                                    </li>
+                                    <li>
+                                        <span>Height (cm/ft-inch):</span>
+                                        <strong>170/4’-56*</strong>
+                                    </li>
+                                    <li>
+                                        <span>Weight (kg/lb):</span>
+                                        <strong>60/132</strong>
+                                    </li>
+                                    <li>
+                                        <span>Current location:</span>
+                                        <strong>Lissabon</strong>
+                                    </li>
+                                </ul>
+                                <button class="add-to-favorites active"><i class="icomoon-heart-empty"></i><span>Add to favorites</span></button>
+                            </div>
+                        </div>
+                        <div class="ladies-block">
+                            <div class="ladies-block__media">
+                                <div class="img-holder">
+                                    <img src="./assets/img/ladies-img-2.jpeg" alt="image description">
+                                </div>
+                                <a href="#" class="btn">Profile page</a>
+                                <a href="#" class="video-link"><i class="icomoon-camera"></i>Add for intro video date</a>
+                            </div>
+                            <div class="ladies-block__info">
+                                <span class="ladies-block__id">ID 4567820</span>
+                                <strong class="ladies-block__name">Anastasia</strong>
+                                <ul class="ladies-block__info-list">
+                                    <li>
+                                        <span>Age:</span>
+                                        <strong>33</strong>
+                                    </li>
+                                    <li>
+                                        <span>Height (cm/ft-inch):</span>
+                                        <strong>170/4’-56*</strong>
+                                    </li>
+                                    <li>
+                                        <span>Weight (kg/lb):</span>
+                                        <strong>60/132</strong>
+                                    </li>
+                                    <li>
+                                        <span>Current location:</span>
+                                        <strong>Lissabon</strong>
+                                    </li>
+                                </ul>
+                                <button class="add-to-favorites"><i class="icomoon-heart-empty"></i><span>Add to favorites</span></button>
+                            </div>
+                        </div>
+                        <div class="ladies-block">
+                            <div class="ladies-block__media">
+                                <div class="img-holder">
+                                    <img src="./assets/img/ladies-img-2.jpeg" alt="image description">
+                                </div>
+                                <a href="#" class="btn">Profile page</a>
+                                <a href="#" class="video-link"><i class="icomoon-camera"></i>Add for intro video date</a>
+                            </div>
+                            <div class="ladies-block__info">
+                                <span class="ladies-block__id">ID 4567820</span>
+                                <strong class="ladies-block__name">Anastasia</strong>
+                                <ul class="ladies-block__info-list">
+                                    <li>
+                                        <span>Age:</span>
+                                        <strong>33</strong>
+                                    </li>
+                                    <li>
+                                        <span>Height (cm/ft-inch):</span>
+                                        <strong>170/4’-56*</strong>
+                                    </li>
+                                    <li>
+                                        <span>Weight (kg/lb):</span>
+                                        <strong>60/132</strong>
+                                    </li>
+                                    <li>
+                                        <span>Current location:</span>
+                                        <strong>Lissabon</strong>
+                                    </li>
+                                </ul>
+                                <button class="add-to-favorites"><i class="icomoon-heart-empty"></i><span>Add to favorites</span></button>
+                            </div>
+                        </div>
+                        <div class="ladies-block">
+                            <div class="ladies-block__media">
+                                <div class="img-holder">
+                                    <img src="./assets/img/ladies-img-2.jpeg" alt="image description">
+                                </div>
+                                <a href="#" class="btn">Profile page</a>
+                                <a href="#" class="video-link"><i class="icomoon-camera"></i>Add for intro video date</a>
+                            </div>
+                            <div class="ladies-block__info">
+                                <span class="ladies-block__id">ID 4567820</span>
+                                <strong class="ladies-block__name">Anastasia</strong>
+                                <ul class="ladies-block__info-list">
+                                    <li>
+                                        <span>Age:</span>
+                                        <strong>33</strong>
+                                    </li>
+                                    <li>
+                                        <span>Height (cm/ft-inch):</span>
+                                        <strong>170/4’-56*</strong>
+                                    </li>
+                                    <li>
+                                        <span>Weight (kg/lb):</span>
+                                        <strong>60/132</strong>
+                                    </li>
+                                    <li>
+                                        <span>Current location:</span>
+                                        <strong>Lissabon</strong>
+                                    </li>
+                                </ul>
+                                <button class="add-to-favorites"><i class="icomoon-heart-empty"></i><span>Add to favorites</span></button>
+                            </div>
+                        </div>
+                        <div class="ladies-block">
+                            <div class="ladies-block__media">
+                                <div class="img-holder">
+                                    <img src="./assets/img/ladies-img-2.jpeg" alt="image description">
+                                </div>
+                                <a href="#" class="btn">Profile page</a>
+                                <a href="#" class="video-link"><i class="icomoon-camera"></i>Add for intro video date</a>
+                            </div>
+                            <div class="ladies-block__info">
+                                <span class="ladies-block__id">ID 4567820</span>
+                                <strong class="ladies-block__name">Anastasia</strong>
+                                <ul class="ladies-block__info-list">
+                                    <li>
+                                        <span>Age:</span>
+                                        <strong>33</strong>
+                                    </li>
+                                    <li>
+                                        <span>Height (cm/ft-inch):</span>
+                                        <strong>170/4’-56*</strong>
+                                    </li>
+                                    <li>
+                                        <span>Weight (kg/lb):</span>
+                                        <strong>60/132</strong>
+                                    </li>
+                                    <li>
+                                        <span>Current location:</span>
+                                        <strong>Lissabon</strong>
+                                    </li>
+                                </ul>
+                                <button class="add-to-favorites"><i class="icomoon-heart-empty"></i><span>Add to favorites</span></button>
+                            </div>
+                        </div>
+                        <div class="ladies-block">
+                            <div class="ladies-block__media">
+                                <div class="img-holder">
+                                    <img src="./assets/img/ladies-img-2.jpeg" alt="image description">
+                                </div>
+                                <a href="#" class="btn">Profile page</a>
+                                <a href="#" class="video-link"><i class="icomoon-camera"></i>Add for intro video date</a>
+                            </div>
+                            <div class="ladies-block__info">
+                                <span class="ladies-block__id">ID 4567820</span>
+                                <strong class="ladies-block__name">Anastasia</strong>
+                                <ul class="ladies-block__info-list">
+                                    <li>
+                                        <span>Age:</span>
+                                        <strong>33</strong>
+                                    </li>
+                                    <li>
+                                        <span>Height (cm/ft-inch):</span>
+                                        <strong>170/4’-56*</strong>
+                                    </li>
+                                    <li>
+                                        <span>Weight (kg/lb):</span>
+                                        <strong>60/132</strong>
+                                    </li>
+                                    <li>
+                                        <span>Current location:</span>
+                                        <strong>Lissabon</strong>
+                                    </li>
+                                </ul>
+                                <button class="add-to-favorites"><i class="icomoon-heart-empty"></i><span>Add to favorites</span></button>
+                            </div>
+                        </div>
+                        <div class="ladies-block">
+                            <div class="ladies-block__media">
+                                <div class="img-holder">
+                                    <img src="./assets/img/ladies-img-2.jpeg" alt="image description">
+                                </div>
+                                <a href="#" class="btn">Profile page</a>
+                                <a href="#" class="video-link"><i class="icomoon-camera"></i>Add for intro video date</a>
+                            </div>
+                            <div class="ladies-block__info">
+                                <span class="ladies-block__id">ID 4567820</span>
+                                <strong class="ladies-block__name">Anastasia</strong>
+                                <ul class="ladies-block__info-list">
+                                    <li>
+                                        <span>Age:</span>
+                                        <strong>33</strong>
+                                    </li>
+                                    <li>
+                                        <span>Height (cm/ft-inch):</span>
+                                        <strong>170/4’-56*</strong>
+                                    </li>
+                                    <li>
+                                        <span>Weight (kg/lb):</span>
+                                        <strong>60/132</strong>
+                                    </li>
+                                    <li>
+                                        <span>Current location:</span>
+                                        <strong>Lissabon</strong>
+                                    </li>
+                                </ul>
+                                <button class="add-to-favorites"><i class="icomoon-heart-empty"></i><span>Add to favorites</span></button>
+                            </div>
+                        </div>
+                        <div class="ladies-block">
+                            <div class="ladies-block__media">
+                                <div class="img-holder">
+                                    <img src="./assets/img/ladies-img-2.jpeg" alt="image description">
+                                </div>
+                                <a href="#" class="btn">Profile page</a>
+                                <a href="#" class="video-link"><i class="icomoon-camera"></i>Add for intro video date</a>
+                            </div>
+                            <div class="ladies-block__info">
+                                <span class="ladies-block__id">ID 4567820</span>
+                                <strong class="ladies-block__name">Anastasia</strong>
+                                <ul class="ladies-block__info-list">
+                                    <li>
+                                        <span>Age:</span>
+                                        <strong>33</strong>
+                                    </li>
+                                    <li>
+                                        <span>Height (cm/ft-inch):</span>
+                                        <strong>170/4’-56*</strong>
+                                    </li>
+                                    <li>
+                                        <span>Weight (kg/lb):</span>
+                                        <strong>60/132</strong>
+                                    </li>
+                                    <li>
+                                        <span>Current location:</span>
+                                        <strong>Lissabon</strong>
+                                    </li>
+                                </ul>
+                                <button class="add-to-favorites"><i class="icomoon-heart-empty"></i><span>Add to favorites</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="paginations-btn">
+                        <li><a href="#" class="prev-page romb-btn"><i class="icomoon-arrow"></i></a></li>
+                        <li><a href="#" class="active romb-btn"><span>1</span></a></li>
+                        <li><a href="#" class="romb-btn"><span>2</span></a></li>
+                        <li><a href="#" class="romb-btn"><span>3</span></a></li>
+                        <li>...</li>
+                        <li><a href="#" class="romb-btn"><span>10</span></a></li>
+                        <li><a href="#" class="next-page romb-btn"><i class="icomoon-arrow"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="hidden">
+        <div class="zoom" id="zoom">
+            <div class="form-holder">
+                <h2>Schedule a Zoom meeting</h2>
+                <div class="text-holder">
+                    <p>The Matchmaking process starts from your interview with Elena Kovalevskaya.
+                        Once you purchase your matchmaking plan, all further interviews with the matchmaker, as well as her support will be included. </p>
+                </div>
+                <form action="#" class="form">
+                    <div class="input-holder">
+                        <input type="text" class="input" placeholder="Your First Name">
+                    </div>
+                    <div class="input-holder">
+                        <input type="text" class="input" placeholder="Your Last Name">
+                    </div>
+                    <div class="input-holder">
+                        <input type="text" class="input" placeholder="Age">
+                    </div>
+                    <div class="input-holder">
+                        <input type="text" class="input" placeholder="Country">
+                    </div>
+                    <div class="input-holder">
+                        <input type="email" class="input" placeholder="E-mail">
+                    </div>
+                    <div class="input-holder">
+                        <input type="tel" class="input" placeholder="Phone number">
+                    </div>
+                    <div class="input-holder">
+                        <input type="text" class="input" placeholder="Profession ">
+                    </div>
+                    <div class="input-holder">
+                        <input type="text" class="input" placeholder="Time to call you back">
+                    </div>
+                    <div class="input-holder textarea-holder">
+                        <textarea class="input textarea" placeholder="Text message "></textarea>
+                    </div>
+                    <div class="checkbox-block">
+                        <h3>How did you hear about Happy Family Matchmaking Agency?</h3>
+                        <div class="input-holder">
+                            <input type="radio" id="friends" name="zoom-radio" value="friends">
+                            <label for="friends">From your friends or relatives</label>
+                        </div>
+                        <div class="input-holder">
+                            <input type="radio" id="web" name="zoom-radio" value="web">
+                            <label for="web">Found on the web</label>
+                        </div>
+                        <div class="input-holder">
+                            <input type="radio" id="clients" name="zoom-radio" value="clients">
+                            <label for="clients">From our clients</label>
+                        </div>
+                        <div class="input-holder">
+                            <input type="radio" id="social" name="zoom-radio" value="social">
+                            <label for="social">From social networks (FB, Instagram)</label>
+                        </div>
+                    </div>
+                    <div class="input-holder textarea-holder">
+                        <input id="personal-data" type="checkbox" name="personal-data" checked="checked">
+                        <label for="personal-data">
+                            You consent to the collection and processing of your personal data
+                        </label>
+                    </div>
+                    <h3>Request a free Interview service from your personal Happy Family Matchmaker now for having it scheduled within 24 - 48hours.</h3>
+                    <div class="btn-holder">
+                        <button type="submit" class="btn btn-secondary">Order</button>
+                    </div>
+                </form>
+            </div>
+            <ul class="form-img-list">
+                <li><img src="./assets/img/form-img-1.jpeg" alt="image description"></li>
+                <li><img src="./assets/img/form-img-2.jpeg" alt="image description"></li>
+                <li><img src="./assets/img/form-img-3.jpeg" alt="image description"></li>
+                <li><img src="./assets/img/form-img-4.jpeg" alt="image description"></li>
+                <li><img src="./assets/img/form-img-5.jpeg" alt="image description"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hidden">
+        <div class="zoom read-more" id="read-more">
+            <div class="form-holder">
+                <h2>Relationship coaching</h2>
+                <div class="text-holder scroll">
+                    <p>Good relationships are made up with time and personal maturity. It is not just luck or fate, but it is an understanding of female nature, a particular woman’s personality, and focusing on the idea of making a lady life better in new relationships. Natalie is a professional psychologist. With 23 years of matchmaking experience we can provide thorough support and help in understanding how a particular lady matches our male customer. We have many ideas on how to help couples communicate and keep the connection in the long term relationships. We provide recipes on how to move to the next level of international love relations and how to do it safely and correctly. Men and women are emotionally biased when it comes to discussing important things: their feelings often block the ability to face objective reality.
+                        Consulting with a professional love coach helps both parties see a bigger picture for the couple future. Thus our customers save their time, resources and avoid frustrations. A professional consultation with an expert opinion helps our male customers focus on the prospective lady and move forward their love story. </p>
+                </div>
+                <ul>
+                    <li>70% increase in a positive response rate from ladies.</li>
+                    <li>Ready made sets of your clothes, hairstyle, accessories that make you look young and attractive</li>
+                    <li>Knowledge of how to express the right messages with your looks (psychology of style)</li>
+                    <li>Understanding of how emphasize more attractive features of your body with your clothes</li>
+                    <li>Knowledge on what to buy and how to put clothes together for a date, travel, work etc.</li>
+                    <li>Visual short PDF-guide with your fashions, colors, fabrics, brands and shopping-list</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="hidden">
+        <div class="call-back" id="call-back">
+            <h2>Call back</h2>
+            <strong>Request a free CALL BACK from your personal Happy Family Matchmaker in time you specify</strong>
+            <form action="#" class="call-back__form">
+                <div class="input-holder">
+                    <input type="text" class="input" placeholder="Your First Name">
+                </div>
+                <div class="input-holder">
+                    <input type="tel" class="input" placeholder="Phone number">
+                </div>
+                <div class="btn-holder">
+                    <button type="submit" class="btn btn-link">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+    <!--		<script src="assets/js/bootstrap.bundle.min.js"></script>-->
+    <!--<script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.1/swiper-bundle.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
+    <script src="./assets/js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/simplebar.js"></script>
+    <script async src="./assets/js/jquery.fancybox.min.js"></script>
+    <script defer src="./assets/js/jquery.nice-select.min.js"></script>
+    <script async src="./assets/js/global.js"></script>
+</body>
+
+</html>

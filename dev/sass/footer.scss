@@ -1,0 +1,185 @@
+.footer {
+	background: $bg-footer;
+	padding: 47px 0 0;
+	font-size: 16px;
+	color: $white;
+
+	@include media('>=tablet') {
+		padding: 87px 0 0;
+	}
+
+	.footer-top {
+		display: flex;
+		flex-direction: column;
+
+		@include media('>=tablet') {
+			justify-content: space-between;
+			flex-direction: row;
+		}
+	}
+
+	.logo-holder {
+		.logo-block {
+			margin-bottom: 32px;
+			max-width: 208px;
+
+			@include media('>=tablet') {
+				// margin-bottom: 57px;
+			}
+		}
+	}
+
+	.tel-link {
+		text-decoration: none;
+		color: $white;
+		margin-bottom: 10px;
+		display: inline-block;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+
+	.menu-holder {
+		display: flex;
+		flex-direction: column;
+		max-width: 775px;
+		width: 100%;
+
+		@include media('>=tablet') {
+			justify-content: space-between;
+			flex-direction: row;
+		}
+
+		ul {
+			@include media('>=tablet') {
+				width: 50%;
+			}
+
+			li {
+				margin-bottom: 10px;
+				text-align: left;
+				padding-left: 0;
+
+				&:before {display: none;}
+
+				@include media('>=tablet') {
+					margin-bottom: 15px;
+				}
+
+				a {
+					color: $white;
+					text-decoration: none;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+
+	.contact-holder {
+		text-align: center;
+		padding-top: 30px;
+
+		@include media('>=tablet') {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-end;
+			width: 50%;
+			padding-top: 18px;
+		}
+	}
+
+	.privacy-list {
+		text-align: center;
+		margin: 0 0 20px;
+
+		@include media('>=tablet') {
+			margin: 0;
+		}
+
+		li {
+			// width: 50%;
+		}
+	}
+
+	.footer-menu {
+		overflow: hidden;
+		margin-bottom: 15px;
+
+		li {
+			width: 50%;
+			float: left;
+		}
+	}
+
+	.footer-socials {
+		width: 100%;
+		display: flex;
+		margin: 0 0 20px;
+		font-size: 20px;
+
+		@include media('>=tablet') {
+			padding-top: 0;
+			margin: 0 0 25px;
+		}
+
+		li {
+			margin: 0 10px 0 0;
+			width: 40px;
+			height: 40px;
+			line-height: 42px;
+			text-align: center;
+			border-radius: 50%;
+			overflow: hidden;
+			padding-left: 0;
+
+
+			a {
+				color: $secondary-color;
+				background-color: $primary-color;
+				text-decoration: none;
+				display: block;
+				height: 100%;
+				transition: all .2s ease-in-out;
+
+				&:hover {
+					color: $white;
+					background-color: $secondary-color;
+				}
+			}
+
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+
+	.btn {
+		padding: 20px 34px;
+	}
+
+
+	.copy-holder {
+		text-align: center;
+		font-size: 14px;
+		padding: 20px 0 10px;
+
+		.other-copy-link {
+			@include media('>=tablet') {
+				position: absolute;
+				//top: 0;
+				right: 0;
+			}
+		}
+
+		a,
+		span {
+			color: #fff;
+		}
+	}
+}

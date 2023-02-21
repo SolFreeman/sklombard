@@ -1,0 +1,104 @@
+ /*calculator*/
+
+.calculator-page {
+ 	.breadcrumbs-holder {
+		padding: 0 15px;
+ 		background-color: $calculator-color;
+ 	}
+}
+
+.faq-area {
+ 	padding-top: 50px;
+}
+
+.faq {
+ 	margin: 0 0 120px;
+}
+
+.faq-list {
+ 	padding: 20px 0 0;
+
+ 	li {
+ 		background-color: $bg-modal;
+ 		margin-bottom: 8px;
+ 		position: relative;
+		line-height: 24px;
+		padding-left: 0;
+
+		&:before {display: none;}
+
+		@include media('>=tablet') {
+			line-height: 30px;
+		}
+
+
+ 		&.active {
+ 			background-color: #F0EAD6;
+
+ 			span {
+ 				&:after {
+ 					transform: rotate(90deg);
+ 					background-color: $primary-color;
+ 				}
+ 			}
+
+ 		}
+
+ 		&:hover {
+ 			span {
+
+ 				&:before,
+ 				&:after {
+ 					background-color: $primary-color;
+ 				}
+ 			}
+ 		}
+
+
+
+ 		span {
+ 			font-weight: 600;
+ 			padding: 23px 40px 23px 14px;
+ 			display: block;
+ 			cursor: pointer;
+ 			position: relative;
+
+ 			&:before,
+ 			&:after {
+ 				position: absolute;
+ 				content: '';
+ 				top: calc(50% - 11px);
+ 				right: 25px;
+ 				transform: rotate(90deg);
+ 				width: 3px;
+ 				height: 22px;
+ 				background-color: $tertiary-color;
+ 				transition: all .2s ease-in-out;
+
+ 				@include media('>=tablet') {
+ 					right: 48px;
+ 				}
+ 			}
+
+ 			&:after {
+ 				transform: rotate(0deg);
+ 			}
+
+ 			@include media('>=tablet') {
+ 				padding: 30px 70px 30px 40px;
+ 			}
+ 		}
+
+ 	}
+
+ 	.text-faq {
+ 		display: none;
+ 		max-width: 1320px;
+ 		padding: 5px 14px;
+
+ 		@include media('>=tablet') {
+ 			padding: 15px 40px;
+ 		}
+ 	}
+
+}

@@ -1,0 +1,208 @@
+.banner {
+	padding-top: 36px;
+	padding-bottom: 85px;
+	margin: 0;
+
+	@include media('>=tablet') {
+		flex-direction: row;
+		align-items: center;
+		padding-bottom: 0;
+	}
+
+	.visual__text-holder {
+		color: $white;
+		text-align: center;
+		
+		@include media('>=tablet') {
+			text-align: left;
+			padding: 0;
+		}
+	}
+
+	.special-propos {
+		top: 10%;
+	}
+
+	.visual__label {
+		height: 70px;
+
+		@include media('>=tablet') {
+			height: 80px;
+		}
+	}
+
+	.visual__img-holder {
+		max-width: 736px;
+
+		&:before {
+			display: none;
+		}
+	}
+
+	&__holder {
+		display: flex;
+		flex-direction: column;
+
+		@include media('>=tablet') {
+			flex-direction: row;
+			align-items: center;
+		}
+	}
+
+	.visual__text-holder {
+		max-width: 895px;
+	}
+}
+
+.content {
+	padding: 20px 0;
+
+	.container {
+		&.text-block {
+			display: flex;
+			flex-direction: column;
+	
+			@include media('>=tablet') {
+				flex-direction: row;
+				align-items: center;
+			}
+		}
+	}
+
+	
+	.text-area,
+	.img-holder {
+		@include media('>=tablet') {
+			max-width: 50%;
+			width: 100%;
+		}
+	}
+
+	.text-area {
+		@include media('>=tablet') {
+			padding-left: 25px;
+		}
+	}
+
+	.img-holder {
+		border-radius: 0 167px 0 0;
+		overflow: hidden;
+		margin: 0 0 20px;
+
+		@include media('>=tablet') {
+			padding-right: 25px;
+		}
+	}
+
+	.green-block {
+		margin: 50px 0;
+	}
+}
+
+.category {
+	&.deposit {
+		.category__list {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.social-list {
+	display: flex;
+	align-items: center;
+
+	li {
+		margin: 0 9px;
+		width: 54px;
+		height: 54px;
+		border-radius: 50%;
+		overflow: hidden;
+		text-align: center;
+		line-height: 60px;
+		padding-left: 0;
+
+		&:before {
+			display: none;
+		}
+
+		@include media('>=tablet') {
+			width: 58px;
+			height: 58px;
+			line-height: 64px;
+		}
+		
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+	a {
+		display: block;
+		background-color: $primary-color;
+		color: $white;
+		text-decoration: none;
+		height: 100%;
+		font-size: 28px;
+		transition: all .2s ease-in-out;
+
+		&:hover {
+			background-color: $secondary-color;
+			color: $white;
+		}
+		
+	}
+}
+
+.conditions {
+	font-weight: 500;
+	font-size: 16px;
+	display: flex;
+	flex-wrap: wrap;
+
+	@include media('>=tablet') {
+		font-size: 24px;
+	}
+
+	li {
+		padding:0 10px 0 46px;
+		position: relative;
+		margin: 0 0 15px;
+
+		@include media('>=tablet') {
+			width: 50%;
+			margin: 0 0 30px;
+		}
+
+		&:before {
+			position: absolute;
+			content: '';
+			left: 0;
+			top: 0;
+			width: 30px;
+			height: 30px;
+			background: $primary-color;
+			border-radius: 50%;
+
+			@include media('>=tablet') {
+				top: 4px;
+			}
+		}
+
+		&:after {
+			position: absolute;
+			content:'';
+			width: 9px;
+			height: 14px;
+			border: 2px solid $white;
+			border-width: 0 2px 2px 0;
+			transform: rotate(34deg);
+			left: 10px;
+			top: 5px;
+
+			@include media('>=tablet') {
+				top: 9px;
+			}
+		}
+	}
+}

@@ -1,0 +1,303 @@
+@@include('templates/head.html')
+@@include('templates/header.html')
+<main class="wrapper calculator-page">
+	<div class="breadcrumbs-holder">
+		<div class="breadcrumbs">
+			<span>
+				<span>
+					<a href="index.html">Главная</a> /
+					<span class="breadcrumb_last">Калькулятор</span>
+				</span>
+			</span>
+		</div>
+	</div>
+	<section class="calculator" data-aos="fade-up" data-aos-offse="-900">
+		<div class="container">
+			<h2>Калькулятор</h2>
+			<div class="tabs">
+				<div class="tabs__holder">
+					<ul class="tabs__caption">
+						<li>Срібло</li>
+						<li>Золото</li>
+						<li class="active">Техніка</li>
+					</ul>
+				</div>
+				<p class="center">*Якщо хочете більш точну оцінку вартости вашої техніки - зателефонуйте нам </p>
+
+				<!-- first tab -->
+				<div class="tabs__content">
+					<form action="#" method="post" class="calculator__form">
+						<div class="input-row">
+							<div class="input-col">
+								<input type="name" class="input-text" placeholder="Ім'я">
+							</div>
+							<div class="input-col">
+								<input type="tel" class="input-text" placeholder="Номер телефона">
+							</div>
+
+							<div class="input-col select_single_style">
+								<select class="select_single">
+									<option>Виберіть місто та відділення</option>
+									<option value="O3" data-badge="">Харків</option>
+									<option value="O4" data-badge="">Богодухів</option>
+									<option value="O4" data-badge="">Валки</option>
+									<option value="O4" data-badge="">Мерефа</option>
+									<option value="O4" data-badge="">Красноград</option>
+									<option value="O4" data-badge="">Нова Водолага</option>
+								</select>
+							</div>
+						</div>
+						<div class="input-row">
+							<div class="input-col">
+								<input type="text" class="input-text" placeholder="Назва товару">
+							</div>
+							<div class="input-col">
+								<input type="text" class="input-text" placeholder="Вага, грам">
+							</div>
+							<div class="input-col select_single_style">
+								<select class="select_single">
+									<option>Проба</option>
+									<option value="O1" data-badge="">999</option>
+									<option value="O2" data-badge="">958</option>
+									<option value="O2" data-badge="">750</option>
+									<option value="O2" data-badge="">585</option>
+									<option value="O2" data-badge="">500</option>
+								</select>
+							</div>
+						</div>
+						<div class="input-row">
+							<div class="input-col gold">
+								<div class="custom-file-holder">
+									<label for="custom-in-file">Завантажте фото</label>
+									<input name="file[]" type="file" accept="image/*" multiple />
+								</div>
+								<ul class="preview"></ul>
+							</div>
+						</div>
+						<div class="btn-holder"><button class="btn btn-primary">Розрахувати</button></div>
+					</form>
+				</div>
+
+				<!-- second tab -->
+				<div class="tabs__content">
+					<form action="#" method="post" class="calculator__form">
+						<div class="input-row">
+							<div class="input-col">
+								<input type="name" class="input-text" placeholder="Ім'я">
+							</div>
+							<div class="input-col">
+								<input type="tel" class="input-text" placeholder="Номер телефона">
+							</div>
+
+							<div class="input-col select_single_style">
+								<select class="select_single">
+									<option>Виберіть місто та відділення</option>
+									<option value="O3" data-badge="">Харків</option>
+									<option value="O4" data-badge="">Богодухів</option>
+									<option value="O4" data-badge="">Валки</option>
+									<option value="O4" data-badge="">Мерефа</option>
+									<option value="O4" data-badge="">Красноград</option>
+									<option value="O4" data-badge="">Нова Водолага</option>
+								</select>
+							</div>
+						</div>
+						<div class="input-row">
+							<div class="input-col">
+								<input type="text" class="input-text" placeholder="Назва товару">
+							</div>
+							<div class="input-col">
+								<input type="text" class="input-text" placeholder="Вага, грам">
+							</div>
+							<div class="input-col select_single_style">
+								<select class="select_single">
+									<option>Проба</option>
+									<option value="O1" data-badge="">999</option>
+									<option value="O2" data-badge="">958</option>
+									<option value="O2" data-badge="">750</option>
+									<option value="O2" data-badge="">585</option>
+									<option value="O2" data-badge="">500</option>
+								</select>
+							</div>
+						</div>
+						<div class="input-row">
+							<div class="input-col gold">
+								<div class="custom-file-holder">
+									<label for="custom-in-file">Завантажте фото</label>
+									<input name="file[]" type="file" accept="image/*" multiple />
+								</div>
+								<ul class="preview"></ul>
+							</div>
+						</div>
+						<div class="btn-holder"><button class="btn btn-primary">Розрахувати</button></div>
+					</form>
+				</div>
+				<!-- third tab -->
+				<div class="tabs__content active">
+					<form action="#" method="post" class="calculator__form">
+						<div class="input-row">
+							<div class="input-col">
+								<input type="name" class="input-text" placeholder="Ім'я">
+							</div>
+							<div class="input-col">
+								<input type="tel" class="input-text" placeholder="Номер телефона">
+							</div>
+							<div class="input-col">
+								<input type="text" class="input-text" placeholder="Назва товару">
+							</div>
+						</div>
+						<div class="input-row">
+							<div class="input-col select_single_style">
+								<select class="select_single">
+									<option>Стан</option>
+									<option value="1" data-badge="">Глибокі подряпини</option>
+									<option value="2" data-badge="">Потертості</option>
+									<option value="4" data-badge="">Тріщини</option>
+									<option value="3" data-badge="">Ідеальний стан</option>
+									<option value="5" data-badge="">Стан близький до ідеального</option>
+									<option value="6" data-badge="">Критичний стан</option>
+								</select>
+							</div>
+							<div class="input-col">
+								<select class="js-select2" multiple="multiple">
+									<option value="O1" data-badge="">Гарантія</option>
+									<option value="O2" data-badge="">Брухт</option>
+								</select>
+							</div>
+							<div class="input-col select_single_style">
+								<select class="select_single">
+									<option>Виберіть місто та відділення</option>
+									<option value="O3" data-badge="">Харків</option>
+									<option value="O4" data-badge="">Богодухів</option>
+									<option value="O4" data-badge="">Валки</option>
+									<option value="O4" data-badge="">Мерефа</option>
+									<option value="O4" data-badge="">Красноград</option>
+									<option value="O4" data-badge="">Нова Водолага</option>
+								</select>
+							</div>
+						</div>
+						<div class="input-row">
+							<div class="input-col">
+								<div class="custom-file-holder">
+									<label for="custom-in-file">Завантажте фото</label>
+									<input name="file[]" type="file" accept="image/*" multiple />
+								</div>
+								<ul class="preview"></ul>
+							</div>
+							<div class="input-col textarea-col">
+								<textarea class="textarea" placeholder="Коментар"></textarea>
+							</div>
+						</div>
+						<div class="btn-holder"><button class="btn btn-primary">Розрахувати</button></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="faq">
+		<div class="container">
+			<div class="green-block yellow">
+				<div class="green-block__text">
+					<h2>Отримати консультацію</h2>
+					<p>Об'єктивна оцінка виробів експертом. Фахівець бере до уваги стан і зовнішній вигляд речей, їх
+						бренд,
+						колекцію і термін використання. </p>
+				</div>
+				<div class="btn-box"><a href="#" class="btn btn-secondary">Напишіть нам</a></div>
+			</div>
+			<div class="faq-area">
+				<h2>FAQ</h2>
+
+				<ul class="faq-list">
+					<li>
+						<span>Як отримати кредит під заставу у ломбарді?</span>
+						<div class="text-faq">
+							<p>Бажаєте взяти свій перший кредит дуже вигідно? Ломбард пропонує чудові умови. 0.01% на
+								день терміном до 14 днів включно! З 15 днів тариф стандартний 0,5% на день. Сума кредиту
+								– від 20 грн до 10 000 грн. Об'єктивна оцінка виробів експертом. Фахівець бере до уваги
+								стан і зовнішній вигляд речей, їх бренд, колекцію і термін використання.
+							</p>
+							<p>Фахівець бере до уваги стан і зовнішній вигляд речей, їх бренд, колекцію. Якщо хочете
+								більш точну оцінку вартости зателефонуйте нам. </p>
+						</div>
+					</li>
+					<li>
+						<span>Чи забезпечуєте конфіденційність та надійність?</span>
+						<div class="text-faq">
+							<p>Бажаєте взяти свій перший кредит дуже вигідно? Ломбард пропонує чудові умови. 0.01% на
+								день терміном до 14 днів включно! З 15 днів тариф стандартний 0,5% на день. Сума кредиту
+								– від 20 грн до 10 000 грн. Об'єктивна оцінка виробів експертом. Фахівець бере до уваги
+								стан і зовнішній вигляд речей, їх бренд, колекцію і термін використання.
+							</p>
+							<p>Фахівець бере до уваги стан і зовнішній вигляд речей, їх бренд, колекцію. Якщо хочете
+								більш точну оцінку вартости зателефонуйте нам. </p>
+						</div>
+					</li>
+					<li>
+						<span>Умови надання коштів</span>
+						<div class="text-faq">
+							<p>Бажаєте взяти свій перший кредит дуже вигідно? Ломбард пропонує чудові умови. 0.01% на
+								день терміном до 14 днів включно! З 15 днів тариф стандартний 0,5% на день. Сума кредиту
+								– від 20 грн до 10 000 грн. Об'єктивна оцінка виробів експертом. Фахівець бере до уваги
+								стан і зовнішній вигляд речей, їх бренд, колекцію і термін використання.
+							</p>
+							<p>Фахівець бере до уваги стан і зовнішній вигляд речей, їх бренд, колекцію. Якщо хочете
+								більш точну оцінку вартости зателефонуйте нам. </p>
+						</div>
+					</li>
+					<li>
+						<span>Як отримати кредит під заставу у ломбарді?</span>
+						<div class="text-faq">
+							<p>Бажаєте взяти свій перший кредит дуже вигідно? Ломбард пропонує чудові умови. 0.01% на
+								день терміном до 14 днів включно! З 15 днів тариф стандартний 0,5% на день. Сума кредиту
+								– від 20 грн до 10 000 грн. Об'єктивна оцінка виробів експертом. Фахівець бере до уваги
+								стан і зовнішній вигляд речей, їх бренд, колекцію і термін використання.
+							</p>
+							<p>Фахівець бере до уваги стан і зовнішній вигляд речей, їх бренд, колекцію. Якщо хочете
+								більш точну оцінку вартости зателефонуйте нам. </p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="description">
+		<div class="container">
+			<h3>Інформаційний блок SEo-текст</h3>
+			<div class="text-holder">
+				<div class="scroll">
+					<p>Бажаєте взяти свій перший кредит дуже вигідно? Ломбард пропонує чудові умови. 0.01% на день
+						терміном до 14 днів включно! З 15 днів тариф стандартний 0,5% на день. Сума кредиту – від 20 грн
+						до 10 000 грн. Об'єктивна оцінка виробів експертом. Фахівець бере до уваги стан і зовнішній
+						вигляд речей, їх бренд, колекцію і термін використання.
+					</p>
+					<p>Фахівець бере до уваги стан і зовнішній вигляд речей, їх бренд, колекцію. Якщо хочете більш точну
+						оцінку вартости зателефонуйте нам. Об'єктивна оцінка виробів експертом.
+						Фахівець бере до уваги стан і зовнішній вигляд речей, їх бренд, колекцію. Якщо хочете більш
+						точну оцінку вартости зателефонуйте нам.</p>
+					<p>Виберіть відділення, що вас цікавить. Якщо хочете більш точну оцінку вартости зателефонуйте.</p>
+					<p>Фахівець бере до уваги стан і зовнішній вигляд речей, їх бренд, колекцію. Якщо хочете більш точну
+						оцінку вартости зателефонуйте нам. Об'єктивна оцінка виробів експертом.
+						Фахівець бере до уваги стан і зовнішній вигляд речей, їх бренд, колекцію. Якщо хочете більш
+						точну оцінку вартости зателефонуйте нам.</p>
+					<p>Фахівець бере до уваги стан і зовнішній вигляд речей, їх бренд, колекцію. Якщо хочете більш точну
+						оцінку вартости зателефонуйте нам. Об'єктивна оцінка виробів експертом.
+						Фахівець бере до уваги стан і зовнішній вигляд речей, їх бренд, колекцію. Якщо хочете більш
+						точну оцінку вартости зателефонуйте нам.</p>
+					<p>Фахівець бере до уваги стан і зовнішній вигляд речей, їх бренд, колекцію. Якщо хочете більш точну
+						оцінку вартости зателефонуйте нам. Об'єктивна оцінка виробів експертом.
+						Фахівець бере до уваги стан і зовнішній вигляд речей, їх бренд, колекцію. Якщо хочете більш
+						точну оцінку вартости зателефонуйте нам.</p>
+					<p>Фахівець бере до уваги стан і зовнішній вигляд речей, їх бренд, колекцію. Якщо хочете більш точну
+						оцінку вартости зателефонуйте нам. Об'єктивна оцінка виробів експертом.
+						Фахівець бере до уваги стан і зовнішній вигляд речей, їх бренд, колекцію. Якщо хочете більш
+						точну оцінку вартости зателефонуйте нам.</p>
+					<p>Фахівець бере до уваги стан і зовнішній вигляд речей, їх бренд, колекцію. Якщо хочете більш точну
+						оцінку вартости зателефонуйте нам. Об'єктивна оцінка виробів експертом.
+						Фахівець бере до уваги стан і зовнішній вигляд речей, їх бренд, колекцію. Якщо хочете більш
+						точну оцінку вартости зателефонуйте нам.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+@@include('templates/footer.html')
