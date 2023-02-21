@@ -1233,7 +1233,8 @@ input:checked + label:before {
     padding: 0 12px;
     cursor: pointer;
     list-style-type: none;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 0; }
     .language-list .menu-item:before {
       display: none; }
     .language-list .menu-item:hover a {
@@ -1273,7 +1274,8 @@ input:checked + label:before {
       display: flex;
       align-items: center; } }
   .nav__item {
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    padding-left: 0; }
     @media (min-width: 1320px) {
       .nav__item {
         padding: 10px 0 10px 33px;
@@ -1294,9 +1296,11 @@ input:checked + label:before {
       width: auto;
       height: auto;
       background: none; }
-    .nav__item:hover a:before {
-      color: #FFCC00;
-      transform: rotate(-180deg); }
+    .nav__item.open a, .nav__item:hover a {
+      color: #FFCC00; }
+      .nav__item.open a:before, .nav__item:hover a:before {
+        color: #FFCC00;
+        transform: rotate(-180deg); }
   .nav li {
     position: relative; }
     .nav li:before {
@@ -1442,7 +1446,8 @@ input:checked + label:before {
       margin-bottom: 0;
       margin-right: 25px; } }
   .nav-login li {
-    padding-left: 0; }
+    padding-left: 0;
+    margin-bottom: 0; }
     .nav-login li:before {
       display: none; }
     .nav-login li a {
@@ -2379,7 +2384,8 @@ $screen-large 1280px
     transition: background-color .2s ease-in-out; }
     @media (min-width: 768px) {
       .category__link {
-        padding: 44px 20px 25px 38px; } }
+        padding: 44px 20px 25px 38px;
+        min-height: 280px; } }
     .category__link:hover {
       color: #282828;
       background-color: transparent; }
@@ -2677,7 +2683,9 @@ span.select2-selection__clear {
     position: relative;
     border-radius: 4px;
     overflow: hidden;
-    margin-right: 8px; }
+    margin-right: 8px;
+    padding-left: 0;
+    margin-bottom: 0; }
     .preview li:before {
       position: absolute;
       content: '';
@@ -5449,7 +5457,8 @@ span.select2-selection__clear {
   display: flex; }
   .btn-list li {
     margin-right: 15px;
-    padding: 0; }
+    padding: 0;
+    margin-bottom: 0; }
     @media (min-width: 768px) {
       .btn-list li {
         margin-right: 25px; } }
