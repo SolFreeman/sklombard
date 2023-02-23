@@ -1036,30 +1036,40 @@ function faqAccordeon() {
 
 function listCategory() {
 	var allLi = jQuery('.list-category .item'),
-		allSub = allLi.children('.sub-content');
-
+	  allSub = allLi.children('.sub-content');
+  
 	jQuery('.list-category .item > .intro-box').each(function () {
-		var doc = jQuery(document),
-			$this = jQuery(this),
-			item = $this.parent('li'),
-			itemFilter = $this.next('.sub-content'),
-			itemParent = item.parents('li');
-
-
-		$this.on('click', function () {
-			if (item.hasClass('active')) {
-				itemFilter.slideUp();
-				item.removeClass('active');
-			}
-			else {
-				allLi.not(itemParent).removeClass('active');
-				allLi.not(itemParent).find('.sub-content').slideUp();
-				itemFilter.slideDown();
-				item.addClass('active');
-			}
-		});
+	  var doc = jQuery(document),
+		$this = jQuery(this),
+		item = $this.parent('li'),
+		itemFilter = $this.next('.sub-content'),
+		itemParent = item.parents('li');
+  
+	  $this.on('click', function () {
+		if (jQuery(window).width() < 768) {
+		  if (item.hasClass('active')) {
+			itemFilter.slideUp();
+			item.removeClass('active');
+		  } else {
+			allLi.not(itemParent).removeClass('active');
+			allLi.not(itemParent).find('.sub-content').slideUp();
+			itemFilter.slideDown();
+			item.addClass('active');
+		  }
+		} else {
+		  if (item.hasClass('active')) {
+			itemFilter.fadeOut();
+			item.removeClass('active');
+		  } else {
+			allLi.not(itemParent).removeClass('active');
+			allLi.not(itemParent).find('.sub-content').fadeOut();
+			itemFilter.fadeIn();
+			item.addClass('active');
+		  }
+		}
+	  });
 	});
-}
+  }
 
 
 
