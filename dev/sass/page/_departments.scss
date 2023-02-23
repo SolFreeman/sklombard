@@ -178,7 +178,7 @@
 	display: block;
 	position: relative;
 	width: 100%;
-	height: 383px;
+	height: 240px;
 	overflow: hidden;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -186,6 +186,7 @@
 
 	@include media('>=tablet') {
 		width: 520px;
+		height: 383px;
 	}
 }
 
@@ -338,6 +339,8 @@
 		line-height: 26px;
 		font-weight: 600;
 		margin-bottom: 46px;
+		padding-left: 0;
+		position: static;
 
 		@include media('>=tablet') {
 			margin-left: 46px;
@@ -345,6 +348,10 @@
 			&:first-child {
 				margin-left: 0;
 			}
+		}
+
+		&:before {
+			display: none;
 		}
 
 		.holder-li {
@@ -360,7 +367,7 @@
 				top: calc(100% + 12px);
 				transform: translate(-50%, 0);
 				left: 50%;
-	
+
 				@include media('>=tablet') {
 					top: 50%;
 					transform: translate(0, -50%) rotate(-90deg);
@@ -400,16 +407,16 @@
 	}
 
 	.tooltip {
-		position: absolute;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, - 50%);
 		background: $white;
 		box-shadow: 0px 4px 20px 6px rgba(197, 197, 197, 0.25);
 		border-radius: 94px 0px;
 		padding: 40px;
 		max-width: 650px;
-		top: 100%;
-		left: 50%;
 		width: 100%;
-		transform: translateX(-50%);
 		z-index: 10;
 		display: none;
 		font-weight: 500;
@@ -417,6 +424,10 @@
 
 		@include media('>=tablet') {
 			padding: 80px 61px;
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			transform: translateX(-50%);
 		}
 
 		.close {
@@ -458,7 +469,7 @@
 
 	.btn-holder {
 		text-align: center;
-		
+
 		@include media('>=tablet') {
 			flex-direction: row;
 		}
@@ -481,11 +492,20 @@
 		max-height: 352px;
 		width: 100%;
 		margin: 4px;
+		padding-left: 0;
+
+		&:before {
+			display: none;
+		}
 	}
 }
 
 .requirements {
 	margin-bottom: 75px;
+}
+
+.list-category .active .sub-content {
+	display: block;
 }
 
 .list-category {
@@ -529,10 +549,10 @@
 				margin: 0 0 56px;
 			}
 		}
-		
+
 		.col {
 			@include media('>=tablet') {
-				width: 60%;	
+				width: 60%;
 			}
 		}
 
@@ -587,7 +607,10 @@
 		transition: all .2s ease-in-out;
 		font-weight: 500;
 		cursor: pointer;
+		padding-left: 0;
+		position: static;
 
+		&.active,
 		&:hover {
 			background: $secondary-color;
 			color: $white;
@@ -597,11 +620,15 @@
 			}
 		}
 
+		&:before {
+			display: none;
+		}
+
 		@include media('>=tablet') {
 			font-size: 24px;
 			height: 90px;
 		}
-		
+
 		.intro-box {
 			display: flex;
 			align-items: center;
@@ -612,7 +639,7 @@
 				height: 90px;
 				padding-left: 44px;
 			}
-			
+
 		}
 
 		span {
@@ -632,7 +659,7 @@
 				right: 32px;
 				top: 50%;
 				transform: translateY(-50%);
-				
+
 				@include media('>=tablet') {
 					font-size: 22px;
 					content: "\e917";
@@ -645,13 +672,15 @@
 	.product-list {
 
 		@include media('>=tablet') {
-			column-count: 2;	
+			column-count: 2;
 		}
-		
+
 		li {
 			margin-bottom: 20px;
 			padding-left: 20px;
 			position: relative;
+			color: $white;
+			cursor: default;
 
 			&:before {
 				position: absolute;
@@ -679,17 +708,21 @@
 	}
 
 	.requery-list {
-		
+
 		li {
 			margin-bottom: 20px;
 			padding-left: 20px;
 			position: relative;
+			color: $white;
+			cursor: default;
 
 			&:before {
 				position: absolute;
 				content: '—';
 				left: 0;
-				border-radius: 50%;
+				background: none;
+				width: auto;
+				height: auto;
 				top: 0;
 				color: $white;
 			}

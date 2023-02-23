@@ -1,6 +1,5 @@
 ///fonts///
 $font-primary: "Montserrat";
-$font-secondary:  "lora";
 $font-size: 18px;
 $section-title: 32px;
 $line-height: 1.7;
@@ -49,7 +48,7 @@ $placeholder: #bdbdbd;
 
 /*   <Breadcrumbs/>   */
 $breadcrumbs-slash: $secondary-color;
-$breadcrumbs-link: #212121;
+$breadcrumbs-link: $tertiary-color;
 $breadcrumbs-link-hover: $primary-color;
 $breadcrumbs-last-child: #B2B1B1;
 

@@ -709,6 +709,11 @@
 	position: relative;
 }
 
+.select2-search.select2-search--inline {
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
 .select2-selection.select2-selection--single {
 	padding: 2px 23px;
 	position: relative;
@@ -798,6 +803,7 @@ span.select2-selection__clear {
 	margin-right: 11px;
 	margin-top: -1px;
 	vertical-align: middle;
+	top: 0;
 }
 
 .select2-results__option[aria-selected=true]:before {
@@ -2005,6 +2011,8 @@ span.select2-selection__clear {
 }
 
 .consultation {
+	padding-bottom: 50px;
+
 	&__form-holder {
 		background: $bg-modal;
 		border-radius: 150px 0;
@@ -2385,7 +2393,6 @@ span.select2-selection__clear {
 		text-align: center;
 		color: #FFFFFF;
 		margin-bottom: 32px;
-		font-family: $font-secondary;
 
 		@include media('>=tablet') {
 			margin-bottom: 42px;
@@ -2622,7 +2629,6 @@ span.select2-selection__clear {
 	}
 
 	strong {
-		font-family: $font-secondary;
 		font-size: 20px;
 		line-height: 32px;
 		display: block;

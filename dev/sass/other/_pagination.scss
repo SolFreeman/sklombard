@@ -1,70 +1,69 @@
 /* === BEGIN wp_pagenavi === */
-.more-peoducts {
-    margin: 80px auto 40px;
-    border: 1px solid $primary-color;
-    width: 180px;
-    height: 36px;
-    font-size: 16px;
-    padding-right: 27px;
-    line-height: 19px;
+.wp-pagenavi {
+    margin-bottom: 30px;
+    position: relative;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('./assets/img/icon_download.png') no-repeat 150px !important;
-    &:hover {
-        text-decoration: none;
-        color: $color;
-        background: url('./assets/img/icon_download.png') no-repeat 150px $primary-color !important;
-    }
-}
-
-.wp-pagenavi {
-    font-family: 'Gilroy-Medium';
-    font-size: 16px;
-    text-align: center;
-    margin-bottom: 30px;
-    margin: 0 auto 95px;
-    position: relative;
 
     a {
+        border-radius: 50%;
+        background: $grey-page;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-decoration: none;
-        margin: 0 13px;
+        transition: all .2s ease-in-out;
+        color: $black;
+        margin: 0 5px;
+
+        &:hover,
+        &.active {
+            background-color: $primary-color;
+            color: $black;
+        }
+
     }
 
+    .last,
     .first {
-        background: url('./assets/img/icon_pagination-left.png') no-repeat center;
-        padding: 10px 15px !important;
-
-        &:hover {
-            background: url('./assets/img/icon_pagination-left--hover.png') no-repeat center !important;
-        }
-
-    }
-
-    .last {
-        padding: 10px 15px !important;
-        background: url('./assets/img/icon_pagination-right.png') no-repeat center;
-
-        &:hover {
-            background: url('./assets/img/icon_pagination-right--hover.png') no-repeat center !important;
-        }
-    }
-
-    .previouspostslink {
-        background: url('./assets/img/icon-pagination__black-left.png') no-repeat center;
         text-decoration: none;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .2s ease-in-out;
+        display: none;
+
+    }
+
+    .nextpostslink,
+    .previouspostslink {
+        background: none;
+        position: relative;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:before {
+            font-family: 'icomoon';
+            content: "\e918";
+        }
 
         &:hover {
-            background: url('./assets/img/icon-pagination__hover-left.png') no-repeat center;
+            background: none;
+            color: $primary-color;
         }
     }
 
     .nextpostslink {
-        background: url('./assets/img/icon-pagination__black-right.png') no-repeat center;
-        text-decoration: none;
-
-        &:hover {
-            background: url('./assets/img/icon-pagination__hover-right.png') no-repeat center;
+        &:before {
+            content: "\e917";
         }
     }
 
@@ -78,9 +77,72 @@
     }
 
     .current {
-        color: $primary-color;
-        font-size: 16px;
+        border-radius: 50%;
+        background: $grey-page;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: all .2s ease-in-out;
+        color: $black;
+        margin: 0 5px;
     }
 }
 
 /* === END wp_pagenavi === */
+
+.paginations-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+        padding: 0;
+        margin-right: 9px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        &:before {
+            display: none;
+        }
+    }
+
+    .next-page,
+    .prev-page {
+        text-decoration: none;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .2s ease-in-out;
+    }
+}
+
+.page-btn {
+    border-radius: 50%;
+    background: $grey-page;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    color: $black;
+    font-size: 18px;
+
+    &:hover,
+    &.active {
+        background-color: $primary-color;
+        color: $black;
+    }
+
+    &.active {
+        pointer-events: none;
+    }
+}
