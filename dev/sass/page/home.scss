@@ -765,6 +765,11 @@ input.select2-search__field {
 
 li.select2-selection__choice {
 	margin: 0 6px;
+	padding-left: 0;
+
+	&:before {
+		display: none;
+	}
 
 	&:nth-child(2) {
 		margin-left: 15px;
@@ -2089,8 +2094,6 @@ span.select2-selection__clear {
 			margin: 0 20px 40px;
 		}
 	}
-
-	.textarea {}
 }
 
 .description {
