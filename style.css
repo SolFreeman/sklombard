@@ -2617,7 +2617,10 @@ input.select2-search__field {
     outline: none; }
 
 li.select2-selection__choice {
-  margin: 0 6px; }
+  margin: 0 6px;
+  padding-left: 0; }
+  li.select2-selection__choice:before {
+    display: none; }
   li.select2-selection__choice:nth-child(2) {
     margin-left: 15px; }
 
