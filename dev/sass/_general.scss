@@ -89,6 +89,10 @@
 	}
 }
 
+.wrapper {
+	overflow: hidden;
+}
+
 input {
 	font-family: $font-primary;
 
@@ -308,6 +312,7 @@ h1,
 	text-transform: uppercase;
 	position: relative;
 	padding-bottom: 15px;
+	margin-bottom: 30px;
 
 	&:after {
 		position: absolute;
@@ -327,6 +332,7 @@ h2,
 	padding-bottom: 15px;
 	position: relative;
 	text-transform: uppercase;
+	margin-bottom: 25px;
 
 	&:after {
 		position: absolute;
@@ -337,6 +343,10 @@ h2,
 		height: 2px;
 		background: $primary-color;
 		width: 70px;
+	}
+
+	@include media('>=tablet') {
+		margin-bottom: 50px;
 	}
 }
 
