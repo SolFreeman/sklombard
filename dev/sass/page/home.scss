@@ -11,7 +11,17 @@
 		@include media('>=desktop-xxl') {
 			right: 65px;
 		}
+	}
 
+	&__slider {
+		@include media('>=desktop') {
+			height: 640px;
+			overflow: hidden;
+
+			&.slick-initialized {
+				height: auto;
+			}
+		}
 	}
 
 	.slick-prev {
@@ -41,7 +51,33 @@
 		background-color: $grey;
 		position: relative;
 		border-radius: 294px 0 0;
-		padding: 120px 0 90px;
+		padding: 110px 0 30px;
+		overflow: hidden;
+
+		&.img-banner {
+			background-color: transparent;
+			min-height: 0;
+			padding: 0;
+
+			img {
+				object-fit: contain;
+			}
+
+		}
+
+		.desktop-banner {
+			display: none;
+
+			@include media('>=tablet') {
+				display: block;
+			}
+		}
+
+		.mobile-banner {
+			@include media('>=tablet') {
+				display: none;
+			}
+		}
 
 		@include media('>=tablet') {
 			min-height: 640px;
@@ -56,30 +92,6 @@
 
 		@include media('>=tablet') {
 			max-width: 573px;
-		}
-
-		&:before {
-			position: absolute;
-			content: '';
-			width: 169px;
-			height: 132px;
-			border-radius: 48px;
-			background: $bg-style-primary;
-			top: 50%;
-			transform: translateY(-50%);
-			left: 10%;
-
-			@include media('>=desktop') {
-				width: 327px;
-				height: 255px;
-				border-radius: 94px;
-			}
-
-			// @include media('>=tablet') {
-			// 	width: 327px;
-			// 	height: 255px;
-			// 	border-radius: 94px;
-			// }
 		}
 
 		img {
@@ -138,7 +150,7 @@
 		bottom: 0;
 		right: 0;
 		border-radius: 140px 0 0 0;
-		
+
 		height: 70px;
 		padding: 15px 5px 15px 36px;
 		font-size: 16px;
@@ -213,12 +225,12 @@
 
 .home {
 	.visual {
-		&__label {	
+		&__label {
 			width: 256px;
 			height: 70px;
 			padding: 15px 5px 15px 36px;
-			
-	
+
+
 			@include media('>=tablet') {
 				font-size: 24px;
 				line-height: 32px;
@@ -246,6 +258,7 @@
 	color: $tertiary-color;
 	padding-left: 24px;
 	transition: color .2s ease-in-out, background .2s ease-in-out, background-color .2s ease-in-out, transform .2s ease-in-out;
+	z-index: 1;
 
 	@include media('>=tablet') {
 		top: 32%;
@@ -274,7 +287,7 @@
 		@include media('>=tablet') {
 			transform: translate(0, -50%);
 		}
-		
+
 	}
 
 }
@@ -698,6 +711,7 @@
 
 .selection {
 	position: relative;
+	display: block;
 
 	&:before {
 		position: absolute;
@@ -735,15 +749,15 @@
 	padding: 2px 23px;
 	position: relative;
 
-	&:before {
-		position: absolute;
-		content: "\e919";
-		font-family: 'icomoon';
-		color: $modal-color;
-		right: 15px;
-		font-size: 6px;
-		top: calc(50% - 5px);
-	}
+// 	&:before {
+// 		position: absolute;
+// 		content: "\e919";
+// 		font-family: 'icomoon';
+// 		color: $modal-color;
+// 		right: 15px;
+// 		font-size: 6px;
+// 		top: calc(50% - 5px);
+// 	}
 }
 
 .select2-search.select2-search--dropdown {
@@ -798,6 +812,7 @@ span.select2-selection__clear {
 .select2-results__option {
 	padding: 12px 23px;
 	position: relative;
+	margin-bottom: 0;
 
 	&:hover {
 		background-color: rgba(0, 56, 0, .1);
@@ -805,7 +820,6 @@ span.select2-selection__clear {
 }
 
 .select2-container--single {
-
 	.select2-results__option[aria-selected=true]:after,
 	.select2-results__option[aria-selected=true]:before,
 	.select2-results__option:before {
@@ -1048,7 +1062,7 @@ span.select2-selection__clear {
 
 			&:before {
 				display: none;
-				
+
 			}
 		}
 	}
@@ -1143,9 +1157,11 @@ span.select2-selection__clear {
 
 .benefis {
 	padding: 63px 0;
+	margin-bottom: 34px;
 
 	@include media('>=tablet') {
 		padding: 109px 0 100px;
+		margin-bottom: 0;
 	}
 
 	&__slider-holder {
@@ -1292,12 +1308,14 @@ span.select2-selection__clear {
 		flex-direction: column;
 		justify-content: center;
 		position: relative;
+		margin-bottom: 25px;
 
 		@include media('>=tablet') {
 			max-width: 210px;
 			font-size: 24px;
 			padding: 0 15px;
 			box-sizing: content-box;
+			margin-bottom: 0;
 		}
 
 		@include media('>=desktop-xxl') {
@@ -1341,7 +1359,7 @@ span.select2-selection__clear {
 		margin: 0 auto 28px;
 		text-align: center;
 	}
-	
+
 	.tabs__holder {
 		margin-bottom: 28px;
 		justify-content: flex-start;
@@ -1355,7 +1373,7 @@ span.select2-selection__clear {
 
 #map {
 	height: 636px;
-	
+
 	.img-holder {
 		margin-bottom: 5px;
 	}
@@ -1369,7 +1387,7 @@ span.select2-selection__clear {
 			line-height: 24px;
 			font-weight: 500;
 		}
-	
+
 		i {
 			margin-right: 9px;
 			font-size: 14px;
@@ -1383,7 +1401,7 @@ span.select2-selection__clear {
 	font-size: 18px;
 	font-weight: 500;
 
-	
+
 	li {
 		display: flex;
 		align-items: center;
@@ -1411,7 +1429,7 @@ span.select2-selection__clear {
 				display: none;
 			}
 		}
-		
+
 		@include media('>=tablet') {
 			padding: 15px;
 
@@ -1429,7 +1447,7 @@ span.select2-selection__clear {
 			padding: 21px 50px;
 		}
 
-		& > * {
+		&>* {
 			max-width: 100%;
 			width: 100%;
 			margin: 0 0 5px;
@@ -1687,6 +1705,14 @@ span.select2-selection__clear {
 		width: 100%;
 		margin: 0 0 20px;
 		max-width: 472px;
+		opacity: 0;
+		transform: translateX(-50px);
+		transition: opacity .5s, transform .5s;
+
+		&.animated {
+			opacity: 1;
+			transform: translateX(0);
+		}
 
 		@include media('>=tablet') {
 			padding-bottom: 0;

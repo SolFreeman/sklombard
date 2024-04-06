@@ -250,7 +250,6 @@
 
 	blockquote {
 		text-align: center;
-		font-weight: 500;
 		margin: 0 0 40px;
 		//background: #FFFFFF;
 		padding: 115px 20px 50px;
@@ -438,4 +437,25 @@
 		}
 
 	}
+}
+
+.blog {
+	.container {
+		max-width: 1200px;
+	}
+}
+
+.promo {
+	h1 {
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.date {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 30px;
+	color: #909090;
 }

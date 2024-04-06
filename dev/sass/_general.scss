@@ -184,7 +184,7 @@ address {
 
 /*2*/
 ::selection {
-	color: #000;
+	color: #fff;
 	background: $secondary-color;
 }
 
@@ -585,7 +585,7 @@ input:checked+label {
 		}
 
 		&::-webkit-scrollbar {
-			height: 2px;
+			height: 6px;
 			max-width: 300px;
 		}
 	}

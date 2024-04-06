@@ -183,6 +183,7 @@
 	border-radius: 4px;
 	order: 5;
 	margin-bottom: 20px;
+	display: none;
 
 	@include media('>=1320px') {
 		order: unset;
@@ -310,42 +311,55 @@
 	&__item {
 		margin-bottom: 25px;
 		padding-left: 0;
+		position: relative;
 
 		@include media('>=1320px') {
-			padding: 10px 0 10px 33px;
+			padding: 10px 30px 10px 33px;
 			margin: 0;
 		}
 
-		.nav-link {
-			position: relative;
-			padding-right: 20px;
-		}
-
 		&.menu-item-has-children {
-			&>a {
-				&:before {
+			&:after {
+				content: "\e919";
+				margin-left: 20px;
+				display: inline-block;
+				width: 8px;
+				height: 8px;
+				font-family: 'icomoon';
+				color: $white;
+				left: auto;
+				right: auto;
+				top: 5px;
+				font-size: 5px;
+				top: calc(50% - 5px);
+				transition: transform .2s ease-out, color .2s ease-out;
+				background: none;
+
+				@include media('>=1320') {
 					position: absolute;
-					content: "\e919";
-					font-family: 'icomoon';
-					color: $white;
-					left: auto;
-					right: 2px;
-					font-size: 5px;
-					top: calc(50% - 5px);
-					transition: transform .2s ease-out, color .2s ease-out;
 					width: auto;
 					height: auto;
-					background: none;
+					right: 0;
+					margin-left: 0;
 				}
 			}
 		}
 
-		&.open,
-		&:hover {
+		&.open {
 			a {
 				color: $primary-color;
 
-				&:before {
+			}
+
+			&:after {
+				color: $primary-color;
+				transform: rotate(-180deg);
+			}
+		}
+
+		&:hover {
+			&:after {
+				@include media('>=tablet') {
 					color: $primary-color;
 					transform: rotate(-180deg);
 				}
@@ -355,7 +369,13 @@
 
 	li {
 		position: relative;
-		&:before {display: none;}
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+
+		&:before {
+			display: none;
+		}
 
 		&:hover {
 			.sub-menu {
@@ -364,7 +384,9 @@
 			}
 
 			&>a {
-				color: $primary-color;
+				@include media('>=tablet') {
+					color: $primary-color;
+				}
 			}
 		}
 
@@ -374,16 +396,22 @@
 		color: $white;
 		font-weight: 500;
 		transition: color .2s ease-in-out;
-
-		@include media('>=1320px') {}
 	}
 
 	.sub-menu {
 		text-align: left;
-		padding: 0;
+		padding: 15px 0 0;
 		display: none;
 		font-size: 14px;
 		transition: opacity .2s ease-in-out;
+		width: 100%;
+		order: 2;
+
+		@include media('>=1320px') {
+			display: block;
+			width: auto;
+			padding: 0;
+		}
 
 		&:before {
 			position: absolute;
@@ -417,6 +445,7 @@
 		.nav__item {
 			padding: 0;
 			margin-bottom: 0;
+			display: block;
 		}
 
 		a {
@@ -426,8 +455,8 @@
 			transition: background .2s ease-in-out;
 
 			&:hover {
-				background: rgba(40, 40, 40, .1);
-				color: $tertiary-color;
+				background: #e6ede6;
+				color: $secondary-color;
 			}
 
 			@include media('>=1320px') {

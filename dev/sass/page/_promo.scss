@@ -51,7 +51,11 @@
 }
 
 .pagination-area {
-	padding: 40px 0;
+	padding: 40px 0 0;
+
+	@include media('>=tablet') {
+		padding: 40px 0;
+	}
 }
 
 .social-box {
@@ -81,45 +85,60 @@
 
 .pagination {
 	display: flex;
-	justify-content: space-between;
 	font-size: 16px;
 	flex-direction: column;
-	padding: 75px 0;
+	padding: 75px 0 0;
 
 	@include media('>=tablet') {
 		font-size: 24px;
 		flex-direction: row;
+		justify-content: space-between;
+		padding: 75px 0;
 	}
 
 	.prev,
 	.next {
-		max-width: 50px;
-		width: 100%;
-		height: 50px;
-		border-radius: 50%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		text-decoration: none;
-		background-color: $primary-color;
-		box-shadow: 0px 4px 20px 4px #F1F1F1;
 		transition: all .2s ease-in-out;
-		margin: 0 20px 0 0;
 
 		&:hover {
 			background-color: $white;
 			color: $tertiary-color;
+
+			i {
+				background-color: $secondary-color;
+				color: $white;
+			}
 		}
 
-		@include media('>=tablet') {
-			max-width: 80px;
-			height: 80px;
+		i {
+			max-width: 50px;
+			width: 100%;
+			height: 50px;
+			background-color: $primary-color;
+			border-radius: 50%;
+			box-shadow: 0px 4px 20px 4px #F1F1F1;
+			margin: 0 20px 0 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: all .2s ease-in-out;
+
+			@include media('>=tablet') {
+				max-width: 80px;
+				height: 80px;
+			}
 		}
 
 	}
 
 	.next {
-		margin: 0 0 0 20px;
+		i {
+			margin: 0 0 0 20px;
+		}
 	}
 
 	.box {
@@ -130,11 +149,7 @@
 
 		&:nth-child(2) {
 			text-align: right;
-
-			@include media('>=tablet') {
-				text-align: left;
-			}
+			justify-content: flex-end;
 		}
-
 	}
 }
